@@ -1,1 +1,1 @@
-# Bitproject
+# Bitproject chart page
