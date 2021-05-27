@@ -25,9 +25,9 @@
 
 .buttons-box{
     display: grid;
-    grid-template-columns: 20px 20px 20px ;
-  grid-template-rows:  auto auto ;
+    grid-template-columns: 100px 100px 100px ;
+  grid-template-rows:  40px 40px ;
   column-gap: 10px;
   row-gap: 15px;
-  padding: 25%;
+  padding: 20%;
 }
