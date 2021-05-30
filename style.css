@@ -1,33 +1,72 @@
 *{
     margin: 0;
     padding: 0;
-} 
-.header {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    text-align: center;
-    height: 10vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.container-hapiness, .container-buttons{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    text-align: center;
-    height: 45vh;
-    
-}  
+.main{
+    max-width: auto;
+}
 
-.graph-box, .buttons-box{
-   border: 1px solid black;
-   margin: 20px;
+body{
+    background-color: coral;
+}
+
+header {
+    background-color: hotpink;
+    width: 100vw;
+    height: 5vh;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid black;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.chart{
+    border: 1px solid black;
+    margin: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 300px;
+    padding-top: 0px;
+    padding-bottom: 500px;
+    justify-content: center;
+    background-color: white;
+    
+}
+.h1{
+    text-align: center;
 }
 
 .buttons-box{
+    border: 1px solid black;
+    margin: 200px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 200px;
+    background-color: turquoise;
     display: grid;
-    grid-template-columns: 100px 100px 100px ;
-  grid-template-rows:  40px 40px ;
-  column-gap: 10px;
-  row-gap: 15px;
-  padding: 20%;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 60px 60px;
+    row-gap: 15px;
+    padding: 10%;
 }
