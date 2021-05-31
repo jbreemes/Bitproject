@@ -69,8 +69,10 @@ ul li a:hover{
     row-gap: 15px;
     padding: 10%;
     border-radius: 1cm;
+    justify-content: center;
 }
 
 .class-buttons{
     text-align: center;
+    justify-content: center;
 }
