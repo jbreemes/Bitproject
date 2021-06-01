@@ -5,43 +5,43 @@
     <title>Feel-app</title>
     <link rel="stylesheet" href="CSS/student-input.css">
   </head>
+
   <body>
-
-  <h1>Student happiness form</h1>
-  <form class="" action="mailto:mbijl@roc-dev.com" method="post" enctype="text/plain">
-    <h2>How are you feeling today?</h2><br>
-
-<div class="emoji-button">
-  <div>
-    <input type="radio">
-  😁
-  </div>
-  <div>
-    <input type="radio">
-  😊
-  </div>
-  <div>
-    <input type="radio">
-  😐
-  </div>
-  <div>
-    <input type="radio">☹️
-  </div>
-
-    <input type="radio">
-  😱
-</div>
-</div>
-    <h3 id="TextAreaLabel">Is there something you would like to talk about?</h3><br>
-    <textarea name="messageToCoach" rows="8" cols="80"></textarea><br><br>
-
-    <input type="checkbox" name="requestContact" value="">
-       <label>Check this box if you would like to set an appointment with your coach</label><br><br>
-    <input type="button" name="sendButton" value="Send">
-
-
-    </form>
-
-
+      <div class="myForm">
+        <form class="" action="mailto:mbijl@roc-dev.com" method="post" enctype="text/plain">
+          <div class="myBorder">
+            <h1>Student happiness form</h1>
+            <h2>How are you feeling today?</h2>
+            <div id="myInputs">
+              <label for="block_labels">Very good</label>
+              <input type="radio">😁
+            
+              <label for="block_labels">Good</label>
+              <input type="radio">😊
+            
+            
+              <label for="block_labels">Neutral</label>
+              <input type="radio">😐
+            
+            
+              <label for="block_labels">Bad</label>
+              <input type="radio">☹️
+            
+            
+              <label for="block_labels">Very bad</label>
+              <input type="radio">😱
+            </div>
+            <div>
+              <label id="TextAreaLabel">Is there something you would like to talk about?</label><br>
+              <textarea name="messageToCoach" rows="8" cols="80"></textarea><br><br>
+            </div>
+            <div>
+              <input type="checkbox">
+              <label for="myCheckbox">Check this box if you would like to set an appointment with your coach</label><br><br>
+              </div> 
+              <button type="button" id="sendButton">Send</button>
+          </div>
+        </form>
+      </div>
   </body>
 </html>
