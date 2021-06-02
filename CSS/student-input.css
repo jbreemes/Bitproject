@@ -46,22 +46,28 @@ input{
   font-size: 20px;
   font-family: 'Lobster', Arial, Helvetica, sans-serif;
   width: 100%;
-  background-color: rgb(247, 172, 107);
+  background-color: rgb(238, 176, 121);
   border: none;
-  color: peachpuff;
+  color: rgb(255, 255, 255);
   text-shadow: 1px 1px black;
   cursor: pointer;
   border-radius: 5px;
 }
 
 #sendButton:hover {
-  background-color: peachpuff;
-  color: rgb(247, 172, 107);
+  background-color: rgb(250, 216, 185);
+  color: rgb(236, 158, 90);
 }
+
 #myCheckbox {
   margin-top: 12px;
   margin-bottom: 12px;
   padding-left: 60px;
+}
+
+.textArea {
+  padding: 20px;
+  resize: none;
 }
 
 .myBorder {
@@ -69,5 +75,5 @@ input{
   padding: 20px;
   border-radius: 5%;
   box-shadow: 10px 10px 15px black;
-  background-color: rgb(37, 166, 218);
+  background-color: rgb(107, 174, 236);
 }
