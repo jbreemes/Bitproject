@@ -1,74 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-body{
-    background-color: salmon;
-    margin: 0;
-    padding: 0;
-    font-family: 'Lobster',Arial, Helvetica, sans-serif;
+
+body {
+  margin: 0;
+  font-family: 'Lobster', Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: #04009a;
-    width: 100vw;
-    height: 5vh;
+.block_labels {
+  display: block;
+  font: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
-ul{
-    float: right;
-    list-style-type: none;
-    margin-top: 25px;
-    margin-right: 10px;
+h1 {
+  text-align: center;
 }
 
-ul li{
-    display: inline-block;
+h2 {
+  text-align: center;
 }
 
-ul li a{
-    text-decoration: none;
-    color: #fff;
-    
-    transition: 0.6s ease;
+.myForm {
+  background-color: salmon;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-ul li a:hover{
-    background-color: #fff;
-    color: #000;
+#buttonSpacing {
+    margin: 20px;
+    padding: 20px;
 }
 
-.chart{
-    border: 1px solid black;
-    margin: 100px;
-    margin-left: 400px;
-    margin-right: 400px;
-    padding: 300px;
-    padding-top: 0px;
-    padding-bottom: 500px;
-    justify-content: center;
-    background-color: white;
-    border-radius: 1cm; 
-}
-.happiness{
-    text-align: center;
+#sendButton {
+  display: block;
+  padding: 12px;
+  font-size: 20px;
+  font-family: 'Lobster', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background-color: rgb(238, 176, 121);
+  border: none;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px black;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.buttons-box{
-    border: 1px solid black;
-    margin: 200px;
-    margin-left: 400px;
-    margin-right: 400px;
-    padding: 200px;
-    background-color: turquoise;
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 60px 60px;
-    row-gap: 15px;
-    padding: 10%;
-    border-radius: 1cm;
-    justify-content: center;
+#sendButton:hover {
+  background-color: rgb(250, 216, 185);
+  color: rgb(236, 158, 90);
 }
 
-.class-buttons{
-    text-align: center;
-    justify-content: center;
+.myBorder {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 5%;
+  box-shadow: 10px 10px 15px black;
+  background-color: rgb(107, 174, 236);
+}
+
+/* BUTTONS */
+
+#classBtn1 {
+    margin: 5px;
+    padding: 20px;
+    background-color: crimson;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#classBtn2 {
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(243, 139, 55);
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#classBtn3 {
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(97, 74, 231);
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#classBtn4 {
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(79, 214, 113);
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#classBtn5 {
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(211, 70, 176);
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#classBtn6 {
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(229, 238, 102);
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#classBtn1:hover {
+    background-color: rgb(224, 81, 110);
+}
+#classBtn1:focus{
+    outline: none;
+    transform: scale(1.05);
+}
+
+#classBtn2:hover {
+    background-color: rgb(248, 174, 113);
+}
+
+#classBtn3:hover {
+    background-color: rgb(149, 134, 240);
+}
+
+#classBtn4:hover {
+    background-color: rgb(132, 218, 153);
+}
+
+#classBtn5:hover {
+    background-color: rgb(219, 127, 196);
+}
+
+#classBtn6:hover {
+    background-color: rgb(232, 238, 152);
 }
