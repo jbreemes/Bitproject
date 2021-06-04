@@ -43,6 +43,7 @@ h2 {
   width: 100%;
   background-color: rgb(238, 176, 121);
   border: none;
+
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px black;
   cursor: pointer;
@@ -120,28 +121,65 @@ h2 {
 
 #classBtn1:hover {
     background-color: rgb(224, 81, 110);
+    color: black;
 }
-#classBtn1:focus{
+#classBtn1:focus-within{
     outline: none;
-    transform: scale(1.05);
+    transform: scale(1.2);
+    color: black;
 }
 
 #classBtn2:hover {
     background-color: rgb(248, 174, 113);
+    color: black;
+}
+
+#classBtn2:focus-within{
+    outline: none;
+    transform: scale(1.2);
+    color: black;
 }
 
 #classBtn3:hover {
     background-color: rgb(149, 134, 240);
+    color: black;
+}
+
+#classBtn3:focus-within{
+    outline: none;
+    transform: scale(1.2);
+    color: black;
 }
 
 #classBtn4:hover {
     background-color: rgb(132, 218, 153);
+    color: black;
+}
+
+#classBtn4:focus-within{
+    outline: none;
+    transform: scale(1.2);
+    color: black;
 }
 
 #classBtn5:hover {
     background-color: rgb(219, 127, 196);
+    color: black;
+}
+
+#classBtn5:focus-within{
+    outline: none;
+    transform: scale(1.2);
+    color: black;
 }
 
 #classBtn6:hover {
     background-color: rgb(232, 238, 152);
+    color: black;
+}
+
+#classBtn6:focus-within{
+    outline: none;
+    transform: scale(1.2);
+    color: black;
 }
