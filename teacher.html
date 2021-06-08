@@ -4,18 +4,22 @@
     <meta charset="utf-8">
     <title>Student Review</title>
     <link rel="stylesheet" href="teacher.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
   </head>
+  
 
   <body>
       <div class="myForm">
           <div class="myBorder">
             <h1>Student Wellness</h1>
             <h2>My classes</h2>
+            <div id="piechart" style="width: 40vw; height: 45vh;"></div>  
             <div id="buttonSpacing">
                 
                 <button id="classBtn1">Class 1</button>
-                <button id="classBtn3">Class 2</button>
-                <button id="classBtn2">Class 3</button>
+                <button id="classBtn2">Class 2</button>
+                <button id="classBtn3">Class 3</button>
                 <button id="classBtn4">Class 4</button>
                 <button id="classBtn5">Class 5</button>
                 <button id="classBtn6">Class 6</button>
@@ -23,5 +27,6 @@
               <button type="button" id="sendButton">Exit</button>
           </div>
       </div>
+      <script src="chart.js"></script>
   </body>
 </html>

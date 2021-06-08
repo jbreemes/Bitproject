@@ -30,6 +30,10 @@ h2 {
   justify-content: center;
 }
 
+#piechart {
+    margin: 30px;
+}
+
 #buttonSpacing {
     margin: 20px;
     padding: 20px;
@@ -60,7 +64,7 @@ h2 {
   padding: 20px;
   border-radius: 5%;
   box-shadow: 10px 10px 15px black;
-  background-color: rgb(107, 174, 236);
+  background-color: rgb(170, 118, 94);
 }
 
 /* BUTTONS */
@@ -68,7 +72,9 @@ h2 {
 #classBtn1 {
     margin: 5px;
     padding: 20px;
-    background-color: crimson;
+    
+    background-color: rgb(97, 74, 231);
+
     border: none;
     font-weight: bold;
     border-radius: 5px;
@@ -77,7 +83,7 @@ h2 {
 #classBtn2 {
     margin: 5px;
     padding: 20px;
-    background-color: rgb(243, 139, 55);
+    background-color: crimson;
     border: none;
     font-weight: bold;
     border-radius: 5px;
@@ -86,7 +92,7 @@ h2 {
 #classBtn3 {
     margin: 5px;
     padding: 20px;
-    background-color: rgb(97, 74, 231);
+    background-color: rgb(243, 139, 55);
     border: none;
     font-weight: bold;
     border-radius: 5px;
@@ -113,14 +119,14 @@ h2 {
 #classBtn6 {
     margin: 5px;
     padding: 20px;
-    background-color: rgb(229, 238, 102);
+    background-color: rgb(62, 185, 194);
     border: none;
     font-weight: bold;
     border-radius: 5px;
 }
 
 #classBtn1:hover {
-    background-color: rgb(224, 81, 110);
+    background-color: rgb(149, 134, 240);
     color: black;
 }
 #classBtn1:focus-within{
@@ -130,7 +136,7 @@ h2 {
 }
 
 #classBtn2:hover {
-    background-color: rgb(248, 174, 113);
+    background-color: rgb(224, 81, 110);
     color: black;
 }
 
@@ -141,7 +147,7 @@ h2 {
 }
 
 #classBtn3:hover {
-    background-color: rgb(149, 134, 240);
+    background-color: rgb(248, 174, 113);
     color: black;
 }
 
@@ -174,7 +180,7 @@ h2 {
 }
 
 #classBtn6:hover {
-    background-color: rgb(232, 238, 152);
+    background-color: rgb(107, 194, 201);
     color: black;
 }
 
