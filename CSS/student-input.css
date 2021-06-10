@@ -4,6 +4,7 @@
 body {
   margin: 0;
   font-family: 'Lobster', Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, rgba(255, 130, 1, 0.5), rgba(255, 140, 1, 1));
 }
 
 .block_labels {
@@ -21,8 +22,11 @@ h2 {
   text-align: center;
 }
 
-.myForm {
-  background-color: salmon;
+.myForm { 
+  background-image: url('../images/rocvf.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-color: rgb(245, 120, 17); */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -115,4 +119,5 @@ input{
   border-radius: 5%;
   box-shadow: 10px 10px 15px black;
   background-color: rgb(107, 174, 236);
+  opacity: 0.95;
 }
