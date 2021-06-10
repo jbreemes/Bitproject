@@ -40,7 +40,47 @@ input{
   padding: 5px;
 }
 
-#sendButton {
+#LogOutButton {
+  border: none;
+  padding: 10px;
+  background-color: rgb(238, 176, 121);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px black;
+  font-size: 21px;
+  font-family: 'Lobster', Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  width: 80px;
+  height: 55px;
+}
+
+#LogOutButton:hover {
+  background-color: rgb(250, 216, 185);
+  color: rgb(236, 158, 90);
+}
+
+#ChangeSettingsButton {
+  border: none;
+  padding: 8px;
+  background-color: rgb(238, 176, 121);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px black;
+  font-size: 16px;
+  font-family: 'Lobster', Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  width: 80px;
+  float: right;
+  width: 80px;
+  height: 55px;
+}
+
+#ChangeSettingsButton:hover {
+  background-color: rgb(250, 216, 185);
+  color: rgb(236, 158, 90);
+}
+
+#LetUsKnowButton {
   display: block;
   padding: 12px;
   font-size: 20px;
@@ -54,7 +94,7 @@ input{
   border-radius: 5px;
 }
 
-#sendButton:hover {
+#LetUsKnowButton:hover {
   background-color: rgb(250, 216, 185);
   color: rgb(236, 158, 90);
 }
