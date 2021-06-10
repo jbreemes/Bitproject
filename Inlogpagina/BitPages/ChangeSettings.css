@@ -68,3 +68,29 @@ input {
     background-color: rgb(250, 216, 185);
     color: rgb(236, 158, 90);
 }
+
+#BackButton {
+    font-family: 'Lobster';
+    display: block;
+    padding: 12px;
+    font-size: 20px;
+    width: 100%;
+
+    background-color: rgb(238, 95, 131);
+    border: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 1px 1px black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#BackButton:hover {
+    background-color: rgb(241, 177, 193);
+    color: rgb(238, 95, 131);
+
+}
