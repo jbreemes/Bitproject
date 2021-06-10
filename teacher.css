@@ -31,7 +31,7 @@ h2 {
 }
 
 #piechart {
-    margin: 30px;
+    margin-left: 30px;
 }
 
 #buttonSpacing {
@@ -133,6 +133,8 @@ h2 {
     outline: none;
     transform: scale(1.2);
     color: black;
+    background-color: rgb(149, 134, 240);
+
 }
 
 #classBtn2:hover {
@@ -144,6 +146,8 @@ h2 {
     outline: none;
     transform: scale(1.2);
     color: black;
+    background-color: rgb(224, 81, 110);
+
 }
 
 #classBtn3:hover {
@@ -155,6 +159,8 @@ h2 {
     outline: none;
     transform: scale(1.2);
     color: black;
+    background-color: rgb(248, 174, 113);
+
 }
 
 #classBtn4:hover {
@@ -166,6 +172,8 @@ h2 {
     outline: none;
     transform: scale(1.2);
     color: black;
+    background-color: rgb(132, 218, 153);
+
 }
 
 #classBtn5:hover {
@@ -177,6 +185,8 @@ h2 {
     outline: none;
     transform: scale(1.2);
     color: black;
+    background-color: rgb(219, 127, 196);
+
 }
 
 #classBtn6:hover {
@@ -188,4 +198,6 @@ h2 {
     outline: none;
     transform: scale(1.2);
     color: black;
+    background-color: rgb(107, 194, 201);
+
 }

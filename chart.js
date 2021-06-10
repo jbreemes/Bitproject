@@ -4,20 +4,21 @@
   function drawChart() {
 
     var data = google.visualization.arrayToDataTable([
-      ['Task', 'Happiness'],
-      ['Class 1',     11],
-      ['Class 2',      2],
-      ['Class 3',  2],
+      ['Task', 'Average'],
+      ['Class 1',     4],
+      ['Class 2',      3],
+      ['Class 3',  4],
       ['Class 4', 2],
-      ['Class 5',    7],
-      ['Class 6',  2]
+      ['Class 5',    5],
+      ['Class 6',  4]
     ]);
 
     var options = {
       title: 'Class Happiness Chart'
     };
 
-    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    var chart = new google.visualization.BarChart(document.getElementById('piechart'));
 
     chart.draw(data, options);
   }
+  
