@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Lobster',Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.myForm {
+    background-color: salmon;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    display: block;
+    font-size: 0.5 rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    padding: 5px;
+    border: none;
+    width: 97%;
+    border-radius: 5px;
+}
+
+.myBorder {
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 10px 10px 15px black;
+    background-color: rgb(107, 174, 236);
+    align-items: center;
+}
+
+#myCheckbox {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: inline;
+    color: black;
+}
+#ConfirmSettingsButton {
+    font-family: 'Lobster';
+    display: block;
+    padding: 12px;
+    font-size: 20px;
+    width: 100%;
+
+    background-color: rgb(238, 176, 121);
+    border: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#ConfirmSettingsButton:hover {
+    background-color: rgb(250, 216, 185);
+    color: rgb(236, 158, 90);
+}
+
+#BackButton {
+    font-family: 'Lobster';
+    display: block;
+    padding: 12px;
+    font-size: 20px;
+    width: 100%;
+
+    background-color: rgb(238, 95, 131);
+    border: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 1px 1px black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#BackButton:hover {
+    background-color: rgb(241, 177, 193);
+    color: rgb(238, 95, 131);
+
+}

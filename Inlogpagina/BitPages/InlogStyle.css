@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Lobster',Arial, Helvetica, sans-serif;
+}
+
+.blockLabels {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.myForm {
+    background-color: salmon;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+#SignInButton{
+    font-family: 'Lobster';
+    display: block;
+    padding: 12px;
+    font-size: 20px;
+    width: 100%;
+
+    background-color: rgb(238, 176, 121);
+    border: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#SignInButton:hover {
+    background-color: rgb(250, 216, 185);
+    color: rgb(236, 158, 90);
+}
+
+#ChangeSettingsButton {
+    font-family: 'Lobster';
+    display: block;
+    padding: 12px;
+    font-size: 20px;
+    width: 92%;
+
+    background-color: rgb(238, 95, 131);
+    border: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 1px 1px black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#ChangeSettingsButton:hover {
+    background-color: rgb(241, 177, 193);
+    color: rgb(238, 95, 131);
+
+}
+
+#loginCheckbox {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: rgb(0, 0, 0);
+}
+
+.myBorder {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 10px 10px 15px black;
+    background-color: rgb(107, 174, 236);
+}
