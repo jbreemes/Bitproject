@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Lobster', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 2px;
+}
+
+h2 {
+  text-align: center;
+  margin: 2px;
+}
+
+.myForm {
+  background-color: salmon;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#piechart {
+    margin-left: 10px;
+}
+
+#buttonSpacing {
+    padding: 20px;
+}
+
+#LogOutButton {
+  border: none;
+  padding: 5px;
+  background-color: rgb(238, 176, 121);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px black;
+  font-size: 14px;
+  font-family: 'Lobster', Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  width: 80px;
+  height: 55px;
+}
+
+#LogOutButton:hover {
+  background-color: rgb(250, 216, 185);
+  color: rgb(236, 158, 90);
+}
+
+#ChangeSettingsButton {
+    border: none;
+    padding: 10px;
+    background-color: rgb(238, 176, 121);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px black;
+    font-size: 14px;
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    width: 80px;
+    height: 55px;
+    float: right;
+  }
+  
+  #ChangeSettingsButton:hover {
+    background-color: rgb(250, 216, 185);
+    color: rgb(236, 158, 90);
+  }
+
+#ExitButton {
+  display: block;
+  padding: 12px;
+  font-size: 20px;
+  font-family: 'Lobster', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background-color: rgb(238, 176, 121);
+  border: none;
+
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#ExitButton:hover {
+  background-color: rgb(250, 216, 185);
+  color: rgb(236, 158, 90);
+}
+
+.myBorder {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 5%;
+  box-shadow: 10px 10px 15px black;
+  background-color: rgb(170, 118, 94);
+}
+
+/* BUTTONS */
+
+#classBtn1 {
+    margin: 5px;
+    padding: 20px;
+    
+    background-color: rgb(97, 74, 231);
+
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#classBtn2 {
+    margin: 5px;
+    padding: 20px;
+    background-color: crimson;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#classBtn3 {
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(243, 139, 55);
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#classBtn4 {
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(79, 214, 113);
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#classBtn5 {
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(211, 70, 176);
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#classBtn6 {
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(62, 185, 194);
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#classBtn1:hover {
+    background-color: rgb(149, 134, 240);
+    color: black;
+}
+#classBtn1:focus-within{
+    outline: none;
+    transform: scale(1.2);
+    color: black;
+    background-color: rgb(149, 134, 240);
+
+}
+
+#classBtn2:hover {
+    background-color: rgb(224, 81, 110);
+    color: black;
+}
+
+#classBtn2:focus-within{
+    outline: none;
+    transform: scale(1.2);
+    color: black;
+    background-color: rgb(224, 81, 110);
+
+}
+
+#classBtn3:hover {
+    background-color: rgb(248, 174, 113);
+    color: black;
+}
+
+#classBtn3:focus-within{
+    outline: none;
+    transform: scale(1.2);
+    color: black;
+    background-color: rgb(248, 174, 113);
+
+}
+
+#classBtn4:hover {
+    background-color: rgb(132, 218, 153);
+    color: black;
+}
+
+#classBtn4:focus-within{
+    outline: none;
+    transform: scale(1.2);
+    color: black;
+    background-color: rgb(132, 218, 153);
+
+}
+
+#classBtn5:hover {
+    background-color: rgb(219, 127, 196);
+    color: black;
+}
+
+#classBtn5:focus-within{
+    outline: none;
+    transform: scale(1.2);
+    color: black;
+    background-color: rgb(219, 127, 196);
+
+}
+
+#classBtn6:hover {
+    background-color: rgb(107, 194, 201);
+    color: black;
+}
+
+#classBtn6:focus-within{
+    outline: none;
+    transform: scale(1.2);
+    color: black;
+    background-color: rgb(107, 194, 201);
+
+}
