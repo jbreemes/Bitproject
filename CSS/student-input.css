@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Lobster', Arial, Helvetica, sans-serif;
+}
+
+.block_labels {
+  display: block;
+  font: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.myForm {
+  background-color: salmon;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#myInputs {
+  text-align: center;
+}
+
+input{
+  margin-right: 20px;
+  font-size: 2rem;
+  padding: 5px;
+}
+
+#LogOutButton {
+  border: none;
+  padding: 10px;
+  background-color: rgb(238, 176, 121);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px black;
+  font-size: 21px;
+  font-family: 'Lobster', Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  width: 80px;
+  height: 55px;
+}
+
+#LogOutButton:hover {
+  background-color: rgb(250, 216, 185);
+  color: rgb(236, 158, 90);
+}
+
+#ChangeSettingsButton {
+  border: none;
+  padding: 8px;
+  background-color: rgb(238, 176, 121);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px black;
+  font-size: 16px;
+  font-family: 'Lobster', Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  width: 80px;
+  float: right;
+  width: 80px;
+  height: 55px;
+}
+
+#ChangeSettingsButton:hover {
+  background-color: rgb(250, 216, 185);
+  color: rgb(236, 158, 90);
+}
+
+#LetUsKnowButton {
+  display: block;
+  padding: 12px;
+  font-size: 20px;
+  font-family: 'Lobster', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background-color: rgb(238, 176, 121);
+  border: none;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#LetUsKnowButton:hover {
+  background-color: rgb(250, 216, 185);
+  color: rgb(236, 158, 90);
+}
+
+#myCheckbox {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding-left: 60px;
+}
+
+.textArea {
+  padding: 20px;
+}
+
+.myBorder {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 5%;
+  box-shadow: 10px 10px 15px black;
+  background-color: rgb(107, 174, 236);
+}
