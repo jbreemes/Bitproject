@@ -10,6 +10,7 @@
       ]);
 
       var options = {
+        width: '80%', 
         title: 'Class Happiness Chart'
       };
 
