@@ -1,4 +1,4 @@
-<?php include "./DBconnect.php";
+<?php include "Inlogpagina./DBconnect.php";
               
               if(isset($_POST['LetUsKnowButton'])){
 
