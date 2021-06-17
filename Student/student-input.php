@@ -31,7 +31,7 @@
           <button id="LogOutButton"> Log out</button>
         </Form>
             <button id="ChangeSettingsButton"> Change Settings</button>
-
+              
             <h1>Student happiness form</h1>
             <h2>How are you feeling today?</h2>
 
@@ -62,7 +62,7 @@
               <input type="checkbox">
               <label for="myCheckbox">Check this box if you would like to set an appointment with your coach</label><br><br>
               </div> 
-              <form >
+              <form method="POST">
               <button type="button" id="LetUsKnowButton" value="LetUsKnowButton">Let us know!</button>
               
             </form>
