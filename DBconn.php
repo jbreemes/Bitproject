@@ -11,20 +11,19 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-echo "Connected successfully";
+echo "Connected successfully" . "<br>";
 
-// $sql = "SELECT * FROM `student`";
-// $result = $conn->query($sql);
+// $sql = "SELECT * FROM student";
+// $result = mysqli_query($conn, $sql);
+// $resultCheck= mysqli_num_rows($result);
 
-// if ($result->num_rows > 0) {
-//   // output data of each row
-//   while($row = $result->fetch_assoc()) {
-      
-//     echo " Name: " . $row["firstName"]. " " . $row["lastName"]. " " . $row["password"]. " " . "<br>";
+// if ($resultCheck > 0){
+//   while ($row = mysqli_fetch_assoc($result)){
+//     echo $row['firstName'] . "<br>";
 //   }
-// } else {
-//   echo "0 results";
+
 // }
+
 $conn->close();
 
 
