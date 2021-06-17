@@ -1,3 +1,21 @@
+<?php include "./DBconnect.php";
+              
+              if(isset($_POST['LetUsKnowButton'])){
+
+                $explanation = $_POST['student_explanation'];
+
+                $query = "INSERT INTO moods (student_explanation)";
+                $query .= "VALUES ('$explanation')";
+
+                $result = mysqli_query($connection, $query);
+
+                if(!$result){
+
+                    die('Query Failed'. mysqli_error($connection));
+                }
+              }
+              
+              ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -8,9 +26,10 @@
 
   <body>
       <div class="myForm">
-        <form action="feeling.php" method="POST">
+        <form action="logout.php" method="POST">
           <div class="myBorder">
-            <button id="LogOutButton"> Log out</button>
+          <button id="LogOutButton"> Log out</button>
+        </Form>
             <button id="ChangeSettingsButton"> Change Settings</button>
 
             <h1>Student happiness form</h1>
@@ -18,7 +37,7 @@
 
             <div id="myInputs">
               <label for="block_labels">Very good😁</label>
-              <input type="radio" name="feeling" value="veryGood" required>
+              <input type="radio" name="feeling" value="veryGood">
             
               <label for="block_labels">Good😊</label>
               <input type="radio" name="feeling" value="good">
@@ -37,15 +56,38 @@
             </div>
             <div>
               <h2>Is there something you would like to talk about?</h2><br>
-              <textarea id="textArea" name="messageToCoach" rows="8" cols="80" required></textarea><br><br>
+              <textarea id="textArea" name="messageToCoach" rows="8" cols="80"></textarea><br><br>
             </div>
             <div id="myCheckbox">
               <input type="checkbox">
               <label for="myCheckbox">Check this box if you would like to set an appointment with your coach</label><br><br>
               </div> 
-              <button type="button" id="LetUsKnowButton" value="button">Let us know!</button>
+              <form >
+              <button type="button" id="LetUsKnowButton" value="LetUsKnowButton">Let us know!</button>
+              
+            </form>
           </div>
         </form>
       </div>
   </body>
 </html>
+
+
+
+
+
+<?php 
+
+
+
+//  $sql = "INSERT INTO moods (hapiness, studentId) VALUES ('veryGood', 
+
+// if(isset($_POST['button'])){
+
+
+//     $feeling = $_POST['feeling'];
+
+
+// }
+
+?>
