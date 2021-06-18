@@ -1,11 +1,7 @@
 <?php
-$servername = "51.68.47.8:3306";
-$username = "scrumteam4";
-$password = "yO93wNW2g1lIjVr1";
-$database = "scrumteam4";
 
 // Create connection
-$db = new mysqli($servername, $username, $password, $database);
+$db = new mysqli("51.68.47.8:3306", "scrumteam4", "yO93wNW2g1lIjVr1", "scrumteam4");
 
 // Check connection
 if ($db->connect_error) {
