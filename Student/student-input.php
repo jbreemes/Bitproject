@@ -1,17 +1,17 @@
-<?php include "Inlogpagina./DBconnect.php";
+<?php include "../Inlogpagina/DBconn.php";
               
-              if(isset($_POST['LetUsKnowButton'])){
+              if(isset($_POST['messageToCoach'])){
 
-                $explanation = $_POST['student_explanation'];
+                $explanation = $_POST['messageToCoach'];
 
-                $query = "INSERT INTO moods (student_explanation)";
-                $query .= "VALUES ('$explanation')";
+                $query = "INSERT INTO moods(student_explanation, studentId) VALUES ('$explanation', 2020)";
+                // "VALUES (" . $explanation . ", 2020)";
 
-                $result = mysqli_query($connection, $query);
+                $result = $db->query($query);
 
                 if(!$result){
 
-                    die('Query Failed'. mysqli_error($connection));
+                    die('Query Failed'. mysqli_error($db));
                 }
               }
               
@@ -20,7 +20,6 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>How are you?</title>
     <link rel="stylesheet" href="student-input.css">
   </head>
 
@@ -29,7 +28,8 @@
         <form action="logout.php" method="POST">
           <div class="myBorder">
           <button id="LogOutButton"> Log out</button>
-        </Form>
+        </form>
+        <form method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
             <button id="ChangeSettingsButton"> Change Settings</button>
               
             <h1>Student happiness form</h1>
@@ -62,10 +62,10 @@
               <input type="checkbox">
               <label for="myCheckbox">Check this box if you would like to set an appointment with your coach</label><br><br>
               </div> 
-              <form method="POST">
-              <button type="button" id="LetUsKnowButton" value="LetUsKnowButton">Let us know!</button>
+             
+              <button type="submit" id="LetUsKnowButton">Let us know!</button>
               
-            </form>
+            
           </div>
         </form>
       </div>
