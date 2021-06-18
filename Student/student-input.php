@@ -1,7 +1,7 @@
 <?php include "../Inlogpagina/DBconn.php";
               
               if(isset($_POST['messageToCoach'])){
-
+              
                 $explanation = $_POST['messageToCoach'];
 
                 $query = "INSERT INTO moods(student_explanation, studentId) VALUES ('$explanation', 2020)";
