@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>How are you?</title>
+    <link rel="stylesheet" href="student-input.css">
+  </head>
+
+  <body>
+      <div class="myForm">
+        <form>
+          <div class="myBorder">
+            <button id="LogOutButton"> Log out</button>
+            <button id="ChangeSettingsButton"> Change Settings</button>
+
+            <h1>Student happiness form</h1>
+            <h2>How are you feeling today?</h2>
+
+            <div id="myInputs">
+              <label for="block_labels">Very good😁</label>
+              <input type="radio" name="feeling" value="veryGood" required>
+            
+              <label for="block_labels">Good😊</label>
+              <input type="radio" name="feeling" value="good">
+            
+            
+              <label for="block_labels">Neutral😐</label>
+              <input type="radio" name="feeling" value="neutral">
+            
+            
+              <label for="block_labels">Bad😕</label>
+              <input type="radio" name="feeling" value="bad">
+            
+            
+              <label for="block_labels">Very bad☹️</label>
+              <input type="radio" name="feeling" value="veryBad">
+            </div>
+            <div>
+              <h2>Is there something you would like to talk about?</h2><br>
+              <textarea id="textArea" name="messageToCoach" rows="8" cols="80" required></textarea><br><br>
+            </div>
+            <div id="myCheckbox">
+              <input type="checkbox">
+              <label for="myCheckbox">Check this box if you would like to set an appointment with your coach</label><br><br>
+              </div> 
+              <button type="button" id="LetUsKnowButton">Let us know!</button>
+          </div>
+        </form>
+      </div>
+  </body>
+</html>
