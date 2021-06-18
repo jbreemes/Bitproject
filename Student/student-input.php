@@ -1,11 +1,11 @@
 <?php include "../Inlogpagina/DBconn.php";
               
               if(isset($_POST['messageToCoach'])){
-
+                
+                $feeling = $_POST['feeling'];
                 $explanation = $_POST['messageToCoach'];
 
-                $query = "INSERT INTO moods(student_explanation, studentId) VALUES ('$explanation', 2020)";
-                // "VALUES (" . $explanation . ", 2020)";
+                $query = "INSERT INTO moods(happiness, student_explanation, studentId) VALUES ('$feeling', '$explanation', 2020)";
 
                 $result = $db->query($query);
 
@@ -14,6 +14,8 @@
                     die('Query Failed'. mysqli_error($db));
                 }
               }
+
+            
               
               ?>
 <!DOCTYPE html>
@@ -29,30 +31,30 @@
           <div class="myBorder">
           <button id="LogOutButton"> Log out</button>
         </form>
-        <form method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
             <button id="ChangeSettingsButton"> Change Settings</button>
-              
+            <form method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
+  
             <h1>Student happiness form</h1>
             <h2>How are you feeling today?</h2>
 
             <div id="myInputs">
               <label for="block_labels">Very good😁</label>
-              <input type="radio" name="feeling" value="veryGood">
+              <input type="radio" name="feeling" value="5">
             
               <label for="block_labels">Good😊</label>
-              <input type="radio" name="feeling" value="good">
+              <input type="radio" name="feeling" value="4">
             
             
               <label for="block_labels">Neutral😐</label>
-              <input type="radio" name="feeling" value="neutral">
+              <input type="radio" name="feeling" value="3">
             
             
               <label for="block_labels">Bad😕</label>
-              <input type="radio" name="feeling" value="bad">
+              <input type="radio" name="feeling" value="2">
             
             
               <label for="block_labels">Very bad☹️</label>
-              <input type="radio" name="feeling" value="veryBad">
+              <input type="radio" name="feeling" value="1">
             </div>
             <div>
               <h2>Is there something you would like to talk about?</h2><br>
@@ -76,18 +78,3 @@
 
 
 
-<?php 
-
-
-
-//  $sql = "INSERT INTO moods (hapiness, studentId) VALUES ('veryGood', 
-
-// if(isset($_POST['button'])){
-
-
-//     $feeling = $_POST['feeling'];
-
-
-// }
-
-?>
