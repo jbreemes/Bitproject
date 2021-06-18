@@ -2,25 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Class view</title>
-    <link rel="stylesheet" href="teacherView.css">
-      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">test</script>
+    <title>Student Review</title>
+    <link rel="stylesheet" href="teacher.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
   </head>
-
+  
 
   <body>
+      <div class="myForm">
+          <div class="myBorder">
+            <button id="LogOutButton">Log Out</button>
+            <button id="ChangeSettingsButton">Change Settings</button>
 
-    <div class="myForm">
-        <div class="myBorder">
-          <h1>Class Overview</h1>
-          <h2>Class 1</h2>
-          <div id="piechart" style="width: 40vw; height: 45vh;"></div>
-
-            <button type="button" id="sendButton">Exit</button>
-        </div>
-    </div>
-
-<script src="teacherViewChart.js"></script>
-</body>
+            <h1>Student Wellness</h1>
+            <h2>My classes</h2>   
+            <div id="buttonSpacing">
+                
+                <button id="classBtn1">Class 1</button>
+                <button id="classBtn2">Class 2</button>
+                <button id="classBtn3">Class 3</button>
+                <button id="classBtn4">Class 4</button>
+                <button id="classBtn5">Class 5</button>
+                <button id="classBtn6">Class 6</button>
+              </div> 
+              <button type="button" id="ExitButton">Exit</button>
+          </div>
+      </div>
+      <script src="chart.js"></script>
+  </body>
 </html>
