@@ -6,7 +6,6 @@
                 $explanation = $_POST['messageToCoach'];
 
                 $query = "INSERT INTO moods(happiness, student_explanation, studentId) VALUES ('$feeling', '$explanation', 2020)";
-                // "VALUES (" . $explanation . ", 2020)";
 
                 $result = $db->query($query);
 
@@ -79,18 +78,3 @@
 
 
 
-<?php 
-
-
-
-//  $sql = "INSERT INTO moods (hapiness, studentId) VALUES ('veryGood', 
-
-// if(isset($_POST['button'])){
-
-
-//     $feeling = $_POST['feeling'];
-
-
-// }
-
-?>
