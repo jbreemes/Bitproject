@@ -25,7 +25,7 @@
 
  if (mysql_num_rows($result)==1 ){
         
-    header('location: Student\stundent-input.html');
+    header('location: \Student\stundent-input.html');
 
     exit();
     }else {
