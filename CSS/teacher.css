@@ -97,7 +97,7 @@ h2 {
   padding: 20px;
   border-radius: 5%;
   box-shadow: 10px 10px 15px black;
-  background-color: rgb(170, 118, 94);
+  background-color: rgb(107, 174, 236);
 }
 
 /* BUTTONS */
@@ -152,7 +152,7 @@ h2 {
 #classBtn6 {
     margin: 5px;
     padding: 20px;
-    background-color: rgb(62, 185, 194);
+    background-color: rgb(238, 182, 26);
     border: none;
     font-weight: bold;
     border-radius: 5px;
@@ -223,7 +223,7 @@ h2 {
 }
 
 #classBtn6:hover {
-    background-color: rgb(107, 194, 201);
+    background-color: rgb(236, 197, 90);
     color: black;
 }
 
@@ -231,6 +231,6 @@ h2 {
     outline: none;
     transform: scale(1.2);
     color: black;
-    background-color: rgb(107, 194, 201);
+    background-color: rgb(236, 197, 90);
 
 }
