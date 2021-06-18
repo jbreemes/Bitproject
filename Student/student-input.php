@@ -1,7 +1,6 @@
 <?php include "../Inlogpagina/DBconn.php";
               
               if(isset($_POST['messageToCoach'])){
-                
                 $feeling = $_POST['feeling'];
                 $explanation = $_POST['messageToCoach'];
 
