@@ -12,11 +12,11 @@
    <body>
        <div class="myForm">
        <div class="myBorder">
+             <button id="ChangeSettingsButton">Change Settings</button>
              <form action="../Student/logout.php" method= "POST">
              
              <button id="LogOutButton">Log Out</button>
              </form>
-             <button id="ChangeSettingsButton">Change Settings</button>
 
              <h1>Student Wellness</h1>
              <h2>My classes</h2>
