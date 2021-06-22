@@ -63,8 +63,6 @@
               </div> 
              
               <button type="submit" id="LetUsKnowButton">Let us know!</button>
-              
-            
           </div>
         </form>
       </div>
