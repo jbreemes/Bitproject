@@ -71,7 +71,7 @@
   if($row['email'] == $username && $row['password'] == $passwrd){
     header("location: ../student/student-input.php");
   } elseif($row1['email'] == $username && $row1['password'] == $passwrd){
-    header("location: ../teacher/teacher.html");}
+    header("location: ../teacher/teacher.php");}
     else { echo "Login failed"; }
       
     
