@@ -61,12 +61,21 @@
   
    $row = mysqli_fetch_array($result);
 
+   
+  $result1= mysqli_query ($db, "SELECT * FROM teacher WHERE email ='$username' AND password = '$passwrd'")
+  or die("Error while searching teacher");
+
+  $row1 = mysqli_fetch_array($result1);
+
 
   if($row['email'] == $username && $row['password'] == $passwrd){
     header("location: ../student/student-input.php");
-  }else{
-   echo "failed";
-    }
+  } elseif($row1['email'] == $username && $row1['password'] == $passwrd){
+    header("location: ../teacher/teacher.html");}
+    else { echo "Login failed"; }
+      
+    
+   
 
 }
 
