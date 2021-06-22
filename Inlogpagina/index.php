@@ -49,10 +49,6 @@
   $passwrd = ($_POST["password"]);
 
 
-//   $username = stripcslashes($username);
-//   $passwrd = stripcslashes($passwrd);
-//   $username = mysqli_real_escape_string($username);
-//   $passwrd = mysqli_real_escape_string($passwrd);
 
 
  

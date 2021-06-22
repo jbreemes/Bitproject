@@ -30,8 +30,7 @@
           <div class="myBorder">
           <button id="LogOutButton"> Log out</button>
         </form>
-            <button id="ChangeSettingsButton"> Change Settings</button>
-            <form method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
+        <a href="Changsetting.html" id="ChangeSettingsButton">Change Settings</a>
   
             <h1>Student happiness form</h1>
             <h2>How are you feeling today?</h2>
