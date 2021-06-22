@@ -58,9 +58,8 @@
               <h2>Is there something you would like to talk about?</h2><br>
               <textarea id="textArea" name="messageToCoach" rows="8" cols="80"></textarea><br><br>
             </div>
-            <div id="myCheckbox">
-              <input type="checkbox">
-              <label for="myCheckbox">Check this box if you would like to set an appointment with your coach</label><br><br>
+            <div>
+                <a href="mailto:rqueen@gmail.com" id="MyLink">Make an appointment! </a>
               </div> 
              
               <button type="submit" id="LetUsKnowButton">Let us know!</button>

@@ -40,7 +40,7 @@ h2 {
   border-radius: 5px;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px black;
-  font-size: 14px;
+  font-size: 18px;
   font-family: 'Lobster', Arial, Helvetica, sans-serif;
   cursor: pointer;
   width: 80px;
@@ -54,7 +54,13 @@ h2 {
 
 #ChangeSettingsButton {
     border: none;
-    padding: 10px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: inline;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(238, 176, 121);
     border-radius: 5px;
     color: rgb(255, 255, 255);
@@ -62,8 +68,8 @@ h2 {
     font-size: 14px;
     font-family: 'Lobster', Arial, Helvetica, sans-serif;
     cursor: pointer;
-    width: 80px;
-    height: 55px;
+    width: 70px;
+    height: 45px;
     float: right;
   }
   
