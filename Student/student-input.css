@@ -47,7 +47,7 @@ input{
   border-radius: 5px;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px black;
-  font-size: 21px;
+  font-size: 20px;
   font-family: 'Lobster', Arial, Helvetica, sans-serif;
   cursor: pointer;
   width: 80px;
@@ -61,18 +61,20 @@ input{
 
 #ChangeSettingsButton {
   border: none;
-  padding: 8px;
+  padding: 5px;
   background-color: rgb(238, 176, 121);
   border-radius: 5px;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px black;
+  text-decoration: none;
+  text-align: center;
   font-size: 16px;
   font-family: 'Lobster', Arial, Helvetica, sans-serif;
   cursor: pointer;
   width: 80px;
   float: right;
-  width: 80px;
-  height: 55px;
+  width: 70px;
+  height: 46px;
 }
 
 #ChangeSettingsButton:hover {
