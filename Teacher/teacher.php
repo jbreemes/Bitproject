@@ -1,3 +1,12 @@
+<?php include "../Inlogpagina/DBconn.php";
+
+// $query = mysqli_query("SELECT * FROM student", $db); ?>
+
+<!-- 
+?> -->
+
+
+
 <!DOCTYPE html>
  <html lang="en" dir="ltr">
    <head>
@@ -10,10 +19,20 @@
 
 
    <body>
+   <!-- <span>firstName:</span> <?php echo $row1['firstName']; ?>
+<span>lastName:</span> <?php echo $row1['lastName']; ?>
+<span>email No:</span> <?php echo $row1['email']; ?>
+<span>password:</span> <?php echo $row1['password'];?> -->
        <div class="myForm">
+<<<<<<< Updated upstream
            <div class="myBorder">
              <a href="ChangeSetting.html" id="ChangeSettingsButton">Change Settings</a>
              <form action="../Inlogpagina/index.php" method= "POST">
+=======
+       <div class="myBorder">
+
+             <form action="../Student/logout.php" method= "POST">
+>>>>>>> Stashed changes
              
              <button id="LogOutButton">Log Out</button>
              </form>
@@ -35,6 +54,10 @@
 
 
                  <br>
+
+                 
+                  <div id = "table_slot"></div>
+                 
 
                  <table id="table1" style="width:100% display: none">
                    <tr>
@@ -85,6 +108,44 @@
        document.getElementById("table1").style.display = "none";
        document.getElementById("table2").style.display = "block";
        });
+
+
+    
+       data = [[1, 'Mehran','Juan',4.5], [2, 'Mark','Jose',4]]
+
+       var table = document.createElement('TABLE')
+       table.id = 'table'
+       table.style.color= 'red'
+
+       for(var student = 0; student < data.length; student++) {
+         var row = document.createElement('TR');
+         row.class = 'student-row';
+
+         var studentid = document.createElement('TD');
+         studentid.innerHTML = data[student][0];
+         row.appendChild(studentid);
+
+         var first_name = document.createElement('TD');
+         first_name.innerHTML = data[student][1];
+         row.appendChild(first_name);
+
+         var last_name = document.createElement('TD');
+         last_name.innerHTML = data[student][2];
+         row.appendChild(last_name);
+         
+         var average_happiness = document.createElement('TD');
+         avg_happiness = data[student][3];
+         average_happiness.innerHTML = avg_happiness
+         row.appendChild(average_happiness);
+         avg_happiness--;
+         color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
+         average_happiness.style.color = color
+        table.appendChild(row);
+         
+       }
+
+       document.getElementById('table_slot').appendChild(table);
+
        </script>
    </body>
  </html>
