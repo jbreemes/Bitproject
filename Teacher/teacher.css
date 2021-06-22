@@ -66,7 +66,7 @@ h2 {
     height: 55px;
     float: right;
   }
-  
+
   #ChangeSettingsButton:hover {
     background-color: rgb(250, 216, 185);
     color: rgb(236, 158, 90);
@@ -105,7 +105,7 @@ h2 {
 #classBtn1 {
     margin: 5px;
     padding: 20px;
-    
+
     background-color: rgb(97, 74, 231);
 
     border: none;
