@@ -1,8 +1,4 @@
-<?php
-
- ?>
-
- <!DOCTYPE html>
+<!DOCTYPE html>
  <html lang="en" dir="ltr">
    <head>
      <meta charset="utf-8">
@@ -15,8 +11,11 @@
 
    <body>
        <div class="myForm">
-           <div class="myBorder">
+           
+             <form action="../Inlogpagina/index.php" method= "POST">
+             <div class="myBorder">
              <button id="LogOutButton">Log Out</button>
+             </form>
              <button id="ChangeSettingsButton">Change Settings</button>
 
              <h1>Student Wellness</h1>
