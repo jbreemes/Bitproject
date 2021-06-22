@@ -56,7 +56,7 @@
                   <div id = "table_slot"></div>
                  
 
-                 <table id="table1" style="width:100% display: none">
+                 <table id="table1" style="width:100%; display: none">
                    <tr>
                      <th>Studentid</th>
                      <th>Firstname</th>
