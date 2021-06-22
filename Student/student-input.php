@@ -28,7 +28,7 @@
       <div class="myForm">
         <form action="logout.php" method="POST">
           <div class="myBorder">
-          <button id="LogOutButton"> Log out</button>
+          <button id="LogOutButton">Log out</button>
         </form>
         <a href="Changsetting.html" id="ChangeSettingsButton">Change Settings</a>
   
