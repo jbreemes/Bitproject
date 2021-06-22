@@ -39,6 +39,45 @@ h2 {
     padding: 20px;
 }
 
+#LogOutButton {
+    border: none;
+    padding: 5px;
+    background-color: rgb(238, 176, 121);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px black;
+    font-size: 14px;
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    width: 80px;
+    height: 55px;
+  }
+  
+  #LogOutButton:hover {
+    background-color: rgb(250, 216, 185);
+    color: rgb(236, 158, 90);
+  }
+  
+  #ChangeSettingsButton {
+      border: none;
+      padding: 10px;
+      background-color: rgb(238, 176, 121);
+      border-radius: 5px;
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px black;
+      font-size: 14px;
+      font-family: 'Lobster', Arial, Helvetica, sans-serif;
+      cursor: pointer;
+      width: 80px;
+      height: 55px;
+      float: right;
+    }
+    
+    #ChangeSettingsButton:hover {
+      background-color: rgb(250, 216, 185);
+      color: rgb(236, 158, 90);
+    }
+
 #sendButton {
   display: block;
   padding: 12px;
