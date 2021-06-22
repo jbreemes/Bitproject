@@ -11,9 +11,9 @@
 
    <body>
        <div class="myForm">
-           
-             <form action="../Inlogpagina/index.php" method= "POST">
-             <div class="myBorder">
+       <div class="myBorder">
+             <form action="../Student/logout.php" method= "POST">
+             
              <button id="LogOutButton">Log Out</button>
              </form>
              <button id="ChangeSettingsButton">Change Settings</button>
