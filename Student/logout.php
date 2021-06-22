@@ -1,7 +1,7 @@
-<?php 
+<?php
 
 session_start();
 session_unset();
 session_destroy();
-header("Location: ./inlogpagina/index.html");
+header("Location: ../inlogpagina/index.php");
 ?>
