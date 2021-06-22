@@ -11,12 +11,14 @@
 
    <body>
        <div class="myForm">
-       <div class="myBorder">
-             <button id="ChangeSettingsButton">Change Settings</button>
-             <form action="../Student/logout.php" method= "POST">
+           <div class="myBorder">
+             <a href="ChangeSetting.html" id="ChangeSettingsButton">Change Settings</a>
+             <form action="../Inlogpagina/index.php" method= "POST">
              
              <button id="LogOutButton">Log Out</button>
              </form>
+             
+             
 
              <h1>Student Wellness</h1>
              <h2>My classes</h2>
@@ -66,6 +68,7 @@
                  </table>
                </div>
                <button type="button" id="ExitButton">Exit</button>
+               
            </div>
        </div>
        <script src="chart.js"></script>
