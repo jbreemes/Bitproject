@@ -99,10 +99,27 @@ input{
   color: rgb(236, 158, 90);
 }
 
-#myCheckbox {
-  margin-top: 12px;
-  margin-bottom: 12px;
-  padding-left: 60px;
+#Link {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 18px;
+ padding-bottom: 0;
+}
+
+#MyLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+  padding-top: 0;
+  color: rgb(255, 255, 255);
+}
+
+#MyLink:hover {
+  color: rgb(250, 216, 185);
 }
 
 .textArea {
