@@ -1,3 +1,17 @@
+<?php include "DBconn.php"; 
+
+
+
+?>
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,11 +29,11 @@
 
                 <p>Be sure to remember your password!</p>
                 <hr>
-                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Email" name= "Email">
 
-                <input type="text" placeholder="Mobile number">
+                <input type="text" placeholder="Mobile number" name= "Mobile number">
 
-                <input type="password" placeholder="Enter your password">
+                <input type="password" placeholder="Enter your password" name= "password">
 
                 <input type="password" placeholder="Retype your password">
                     <div>
