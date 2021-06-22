@@ -19,20 +19,17 @@
 
 
    <body>
-   <!-- <span>firstName:</span> <?php echo $row1['firstName']; ?>
-<span>lastName:</span> <?php echo $row1['lastName']; ?>
-<span>email No:</span> <?php echo $row1['email']; ?>
-<span>password:</span> <?php echo $row1['password'];?> -->
+
        <div class="myForm">
-<<<<<<< Updated upstream
+
            <div class="myBorder">
              <a href="ChangeSetting.html" id="ChangeSettingsButton">Change Settings</a>
-             <form action="../Inlogpagina/index.php" method= "POST">
-=======
+            
+
        <div class="myBorder">
 
              <form action="../Student/logout.php" method= "POST">
->>>>>>> Stashed changes
+
              
              <button id="LogOutButton">Log Out</button>
              </form>
