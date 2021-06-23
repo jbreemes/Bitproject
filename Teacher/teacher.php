@@ -1,7 +1,9 @@
 <?php include "../Inlogpagina/DBconn.php";
 
 
-$query = "SELECT happiness, studentId FROM moods";
+$query = "SELECT firstName, studentId, classId, moods.happiness AS happiness FROM student INNER JOIN moods USING (studentId)";
+
+//$query = "SELECT happiness, studentId FROM moods";
 
 // $query = "SELECT student.firstName, moods.happiness
 // FROM student
@@ -14,7 +16,7 @@ $result = $db->query($query);
 if ($result ->num_rows > 0) {
 
   while($row = $result->fetch_assoc()) {
-    echo " Student wellness: " . $row["happiness"]. " " .  $row["studentId"];//. " " . $row["student.firstName"]. "<br>";
+    //echo " Student wellness: " . $row["firstName"]. " " .  $row["studentId"]. " " . $row["classId"]. " " . $row["happiness"]. "<br>";
   }
 } else {
   echo "0 results";
