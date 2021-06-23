@@ -66,7 +66,6 @@
           </div>
         </form>
       </div>
-      <script src="Alert.js"></script>
   </body>
 </html>
 
