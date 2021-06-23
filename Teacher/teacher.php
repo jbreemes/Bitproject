@@ -66,8 +66,26 @@ if ($result ->num_rows > 0) {
 
                  <br>
 
+                <style>
+                  table, th, td {
 
-                  <div id = "table_slot" style="display:hidden"></div>
+                  border: 1px solid black;
+                  border-collapse: collapse;
+                }
+                </style>
+                  <div id = "table_slot" style="display:hidden">
+                    <table>
+                      <th>
+
+                        <td>ID</td>
+                        <td>First name</td>
+                        <td>Last name</td>
+                        <td>Today</td>
+                        <td>Message</td>
+
+                      </th>
+                    </table>
+                  </div>
       <!-- This is the spot for the table -->
                </div>
                <button type="button" id="ExitButton">Exit</button>
@@ -366,11 +384,14 @@ if ($result ->num_rows > 0) {
         table.appendChild(row);
         table.style.background= 'white'
        }
-
        document.getElementById('table_slot').appendChild(table);
        // Class 6 - Table ends here
 
       table_slot.style.background = 'white'
+      table_slot.style.border = '1px solid black'
+      table_slot.style.padding= '5px'
+      // td.style.border = '1px solid black'
+      student.style.border = '10px solid black'
 
 
 
