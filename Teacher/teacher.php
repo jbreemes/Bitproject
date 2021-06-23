@@ -36,7 +36,7 @@ if ($result ->num_rows > 0) {
 
        <div class="myForm">
 
-           <div class="myBorder">
+           <!-- <div class="myBorder"> -->
              <a href="ChangeSetting.html" id="ChangeSettingsButton">Change Settings</a>
 
 
