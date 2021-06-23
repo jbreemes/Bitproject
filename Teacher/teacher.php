@@ -45,11 +45,11 @@ if ($result ->num_rows > 0) {
 
        <div class="myForm">
 
-           <div class="myBorder">
+           <!-- <div class="myBorder"> -->
              <a href="ChangeSetting.html" id="ChangeSettingsButton">Change Settings</a>
 
 
-       <!-- <div class="myBorder"> -->
+       <div class="myBorder">
 
              <form action="../Student/logout.php" method= "POST">
 
@@ -79,7 +79,7 @@ if ($result ->num_rows > 0) {
                   <div id = "table_slot"></div>
 
 
-                 <table id="table1" style="width:100%; display: none">
+                 <!-- <table id="table1" style="width:100%; display: none">
                    <tr>
                      <th>Studentid</th>
                      <th>Firstname</th>
@@ -108,7 +108,7 @@ if ($result ->num_rows > 0) {
                      <td>(convert to color(Fetch from database))</td>
                      <td>(convert to color(Fetch from database))</td>
                    </tr>
-                 </table>
+                 </table> -->
                </div>
                <button type="button" id="ExitButton">Exit</button>
 
@@ -121,20 +121,72 @@ if ($result ->num_rows > 0) {
        {
        document.getElementById("table1").style.display = "block";
        document.getElementById("table2").style.display = "none";
+       document.getElementById("table3").style.display = "none";
+       document.getElementById("table4").style.display = "none";
+       document.getElementById("table5").style.display = "none";
+       document.getElementById("table6").style.display = "none";
+
        });
        // Action listener for button 2
        document.getElementById("classBtn2").addEventListener("click", function()
        {
-       document.getElementById("table1").style.display = "none";
-       document.getElementById("table2").style.display = "block";
+         document.getElementById("table1").style.display = "none";
+         document.getElementById("table2").style.display = "block";
+         document.getElementById("table3").style.display = "none";
+         document.getElementById("table4").style.display = "none";
+         document.getElementById("table5").style.display = "none";
+         document.getElementById("table6").style.display = "none";
+       });
+       // Action listener for button 3
+       document.getElementById("classBtn3").addEventListener("click", function()
+       {
+         document.getElementById("table1").style.display = "none";
+         document.getElementById("table2").style.display = "none";
+         document.getElementById("table3").style.display = "block";
+         document.getElementById("table4").style.display = "none";
+         document.getElementById("table5").style.display = "none";
+         document.getElementById("table6").style.display = "none";
+       });
+       // Action listener for button 4
+       document.getElementById("classBtn4").addEventListener("click", function()
+       {
+         document.getElementById("table1").style.display = "none";
+         document.getElementById("table2").style.display = "none";
+         document.getElementById("table3").style.display = "none";
+         document.getElementById("table4").style.display = "block";
+         document.getElementById("table5").style.display = "none";
+         document.getElementById("table6").style.display = "none";
+       });
+       // Action listener for button 5
+       document.getElementById("classBtn5").addEventListener("click", function()
+       {
+         document.getElementById("table1").style.display = "none";
+         document.getElementById("table2").style.display = "none";
+         document.getElementById("table3").style.display = "none";
+         document.getElementById("table4").style.display = "none";
+         document.getElementById("table5").style.display = "block";
+         document.getElementById("table6").style.display = "none";
+       });
+       // Action listener for button 6
+       document.getElementById("classBtn6").addEventListener("click", function()
+       {
+         document.getElementById("table1").style.display = "none";
+         document.getElementById("table2").style.display = "none";
+         document.getElementById("table3").style.display = "none";
+         document.getElementById("table4").style.display = "none";
+         document.getElementById("table5").style.display = "none";
+         document.getElementById("table6").style.display = "block";
        });
 
 
 
-       data = [[1, 'Mehran','Juan',4.5], [2, 'Mark','Jose',4]]
 
+       data = [[1, 'Mehran','Juan',4.5], [2, 'Mark','Jose',4]]
+       data2 =[[3, 'Serferaaz', 'Jefe', 3],[4, 'Class', '3', 3.5]]
+
+       // Class 1 - Table starts here
        var table = document.createElement('TABLE')
-       table.id = 'table'
+       table.id = 'table1'
        table.style.color= 'red'
 
        for(var student = 0; student < data.length; student++) {
@@ -165,6 +217,182 @@ if ($result ->num_rows > 0) {
        }
 
        document.getElementById('table_slot').appendChild(table);
+       // Class 1 table ends here
+
+       // Class 2 table starts here
+                  var table = document.createElement('TABLE')
+                  table.id = 'table2'
+                  table.class = 'tables'
+                  table.style.color= 'red'
+
+                  for(var student = 0; student < data.length; student++) {
+                    var row = document.createElement('TR');
+                    row.class = 'student-row';
+
+                    var studentid = document.createElement('TD');
+                    studentid.innerHTML = data[student][0];
+                    row.appendChild(studentid);
+
+                    var first_name = document.createElement('TD');
+                    first_name.innerHTML = data[student][1];
+                    row.appendChild(first_name);
+
+                    var last_name = document.createElement('TD');
+                    last_name.innerHTML = data[student][2];
+                    row.appendChild(last_name);
+
+                    var average_happiness = document.createElement('TD');
+                    avg_happiness = data[student][3];
+                    average_happiness.innerHTML = avg_happiness
+                    row.appendChild(average_happiness);
+                    avg_happiness--;
+                    color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
+                    average_happiness.style.color = color
+                   table.appendChild(row);
+
+                  }
+
+                  document.getElementById('table_slot').appendChild(table);
+       // Class 2 - Table ends here
+       // Class 3 - Table starts here
+       var table = document.createElement('TABLE')
+       table.id = 'table3'
+       table.style.color= 'red'
+
+       for(var student = 0; student < data.length; student++) {
+         var row = document.createElement('TR');
+         row.class = 'student-row';
+
+         var studentid = document.createElement('TD');
+         studentid.innerHTML = data[student][0];
+         row.appendChild(studentid);
+
+         var first_name = document.createElement('TD');
+         first_name.innerHTML = data[student][1];
+         row.appendChild(first_name);
+
+         var last_name = document.createElement('TD');
+         last_name.innerHTML = data[student][2];
+         row.appendChild(last_name);
+
+         var average_happiness = document.createElement('TD');
+         avg_happiness = data[student][3];
+         average_happiness.innerHTML = avg_happiness
+         row.appendChild(average_happiness);
+         avg_happiness--;
+         color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
+         average_happiness.style.color = color
+        table.appendChild(row);
+
+       }
+
+       document.getElementById('table_slot').appendChild(table);
+       // Class 3 - Table ends here
+       // Class 4 - Table starts here
+       var table = document.createElement('TABLE')
+       table.id = 'table4'
+       table.style.color= 'red'
+
+       for(var student = 0; student < data.length; student++) {
+         var row = document.createElement('TR');
+         row.class = 'student-row';
+
+         var studentid = document.createElement('TD');
+         studentid.innerHTML = data[student][0];
+         row.appendChild(studentid);
+
+         var first_name = document.createElement('TD');
+         first_name.innerHTML = data[student][1];
+         row.appendChild(first_name);
+
+         var last_name = document.createElement('TD');
+         last_name.innerHTML = data[student][2];
+         row.appendChild(last_name);
+
+         var average_happiness = document.createElement('TD');
+         avg_happiness = data[student][3];
+         average_happiness.innerHTML = avg_happiness
+         row.appendChild(average_happiness);
+         avg_happiness--;
+         color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
+         average_happiness.style.color = color
+        table.appendChild(row);
+
+       }
+
+       document.getElementById('table_slot').appendChild(table);
+       // Class 4 - Table ends here
+       // Class 5 - Table starts here
+       var table = document.createElement('TABLE')
+       table.id = 'table5'
+       table.style.color= 'red'
+
+       for(var student = 0; student < data.length; student++) {
+         var row = document.createElement('TR');
+         row.class = 'student-row';
+
+         var studentid = document.createElement('TD');
+         studentid.innerHTML = data[student][0];
+         row.appendChild(studentid);
+
+         var first_name = document.createElement('TD');
+         first_name.innerHTML = data[student][1];
+         row.appendChild(first_name);
+
+         var last_name = document.createElement('TD');
+         last_name.innerHTML = data[student][2];
+         row.appendChild(last_name);
+
+         var average_happiness = document.createElement('TD');
+         avg_happiness = data[student][3];
+         average_happiness.innerHTML = avg_happiness
+         row.appendChild(average_happiness);
+         avg_happiness--;
+         color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
+         average_happiness.style.color = color
+        table.appendChild(row);
+
+       }
+
+       document.getElementById('table_slot').appendChild(table);
+       // Class 5 - Table ends here
+       // Class 6 - Table starts here
+       var table = document.createElement('TABLE')
+       table.id = 'table6'
+       table.style.color= 'red'
+
+       for(var student = 0; student < data.length; student++) {
+         var row = document.createElement('TR');
+         row.class = 'student-row';
+
+         var studentid = document.createElement('TD');
+         studentid.innerHTML = data[student][0];
+         row.appendChild(studentid);
+
+         var first_name = document.createElement('TD');
+         first_name.innerHTML = data[student][1];
+         row.appendChild(first_name);
+
+         var last_name = document.createElement('TD');
+         last_name.innerHTML = data[student][2];
+         row.appendChild(last_name);
+
+         var average_happiness = document.createElement('TD');
+         avg_happiness = data[student][3];
+         average_happiness.innerHTML = avg_happiness
+         row.appendChild(average_happiness);
+         avg_happiness--;
+         color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
+         average_happiness.style.color = color
+        table.appendChild(row);
+
+       }
+
+       document.getElementById('table_slot').appendChild(table);
+       // Class 6 - Table ends here
+
+
+
 
        </script>
    </body>

@@ -39,7 +39,7 @@ session_start();
 
             <div id="myInputs">
               <label for="block_labels">Very good😁</label>
-              <input type="radio" name="feeling" value="5">
+              <input type="radio" name="feeling" value="5" required>
             
               <label for="block_labels">Good😊</label>
               <input type="radio" name="feeling" value="4">
@@ -58,7 +58,7 @@ session_start();
             </div>
             <div>
               <h2>Is there something you would like to talk about?</h2><br>
-              <textarea id="textArea" name="messageToCoach" rows="8" cols="80"></textarea><br><br>
+              <textarea id="textArea" name="messageToCoach" rows="8" cols="80" required></textarea><br><br>
             </div>
             <div id="myCheckbox">
               <input type="checkbox">
@@ -71,6 +71,7 @@ session_start();
           </div>
         </form>
       </div>
+      <script src="Alert.js"></script>
   </body>
 </html>
 
