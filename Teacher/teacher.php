@@ -37,11 +37,11 @@ if ($result ->num_rows > 0) {
        <div class="myForm">
 
            <!-- <div class="myBorder"> -->
-             <a href="ChangeSetting.html" id="ChangeSettingsButton">Change Settings</a>
+
 
 
        <div class="myBorder">
-
+            <a href="ChangeSetting.html" id="ChangeSettingsButton">Change Settings</a>
              <form action="../Student/logout.php" method= "POST">
 
 
@@ -67,39 +67,8 @@ if ($result ->num_rows > 0) {
                  <br>
 
 
-                  <div id = "table_slot"></div>
-
-
-                 <!-- <table id="table1" style="width:100%; display: none">
-                   <tr>
-                     <th>Studentid</th>
-                     <th>Firstname</th>
-                     <th>Lastname</th>
-                   </tr>
-                   <tr>
-                     <td>1111</td>
-                     <td>Mark</td>
-                     <td>Bijl</td>
-                   </tr>
-                 </table>
-
-
-                 <table id="table2" style="width:100%; display: none">
-                   <tr>
-                     <th>Studentid</th>
-                     <th>Firstname</th>
-                     <th>Todays score</th>
-                     <th>One week avg</th>
-                     <th>Two weeks avg</th>
-                   </tr>
-                   <tr>
-                       <td>6969</td>
-                     <td>Mehran</td>
-                     <td>(convert to color(5))</td>
-                     <td>(convert to color(Fetch from database))</td>
-                     <td>(convert to color(Fetch from database))</td>
-                   </tr>
-                 </table> -->
+                  <div id = "table_slot" style="display:hidden"></div>
+      <!-- This is the spot for the table -->
                </div>
                <button type="button" id="ExitButton">Exit</button>
 
@@ -107,6 +76,8 @@ if ($result ->num_rows > 0) {
        </div>
        <script src="chart.js"></script>
        <script>
+
+
        // Action listener for button 1
        document.getElementById("classBtn1").addEventListener("click", function()
        {
@@ -174,13 +145,28 @@ if ($result ->num_rows > 0) {
 
        data = [[1, 'Mehran','Juan',4.5], [2, 'Mark','Jose',4]]
        data2 =[[3, 'Serferaaz', 'Jefe', 3],[4, 'Class', '3', 3.5]]
+       theader = [['Student Id', 'Firstname', 'Today', 'This week']]
+
 
        // Class 1 - Table starts here
        var table = document.createElement('TABLE')
        table.id = 'table1'
-       table.style.color= 'red'
+
+
 
        for(var student = 0; student < data.length; student++) {
+
+         // ---------------------------------------
+        //   // THeader - Not working
+        // var theader = document.createElement('TH');
+        // theader.class = 'table-header';
+        //
+        // var thStId = document.createElement('TD');
+        // thStId.innerHTML = theader[firstname][0];
+        // theader.appendChild(thStId);
+         // ---------------------------------------
+
+        // Start TR
          var row = document.createElement('TR');
          row.class = 'student-row';
 
@@ -204,6 +190,8 @@ if ($result ->num_rows > 0) {
          color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
          average_happiness.style.color = color
         table.appendChild(row);
+        table.style.background= 'white'
+
 
        }
 
@@ -214,7 +202,6 @@ if ($result ->num_rows > 0) {
                   var table = document.createElement('TABLE')
                   table.id = 'table2'
                   table.class = 'tables'
-                  table.style.color= 'red'
 
                   for(var student = 0; student < data.length; student++) {
                     var row = document.createElement('TR');
@@ -240,6 +227,7 @@ if ($result ->num_rows > 0) {
                     color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
                     average_happiness.style.color = color
                    table.appendChild(row);
+                   table.style.background= 'white'
 
                   }
 
@@ -248,7 +236,6 @@ if ($result ->num_rows > 0) {
        // Class 3 - Table starts here
        var table = document.createElement('TABLE')
        table.id = 'table3'
-       table.style.color= 'red'
 
        for(var student = 0; student < data.length; student++) {
          var row = document.createElement('TR');
@@ -274,6 +261,7 @@ if ($result ->num_rows > 0) {
          color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
          average_happiness.style.color = color
         table.appendChild(row);
+        table.style.background= 'white'
 
        }
 
@@ -282,7 +270,6 @@ if ($result ->num_rows > 0) {
        // Class 4 - Table starts here
        var table = document.createElement('TABLE')
        table.id = 'table4'
-       table.style.color= 'red'
 
        for(var student = 0; student < data.length; student++) {
          var row = document.createElement('TR');
@@ -308,6 +295,7 @@ if ($result ->num_rows > 0) {
          color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
          average_happiness.style.color = color
         table.appendChild(row);
+        table.style.background= 'white'
 
        }
 
@@ -316,7 +304,6 @@ if ($result ->num_rows > 0) {
        // Class 5 - Table starts here
        var table = document.createElement('TABLE')
        table.id = 'table5'
-       table.style.color= 'red'
 
        for(var student = 0; student < data.length; student++) {
          var row = document.createElement('TR');
@@ -342,7 +329,7 @@ if ($result ->num_rows > 0) {
          color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
          average_happiness.style.color = color
         table.appendChild(row);
-
+        table.style.background= 'white'
        }
 
        document.getElementById('table_slot').appendChild(table);
@@ -351,6 +338,7 @@ if ($result ->num_rows > 0) {
        var table = document.createElement('TABLE')
        table.id = 'table6'
        table.style.color= 'red'
+       table.style.background= 'white'
 
        for(var student = 0; student < data.length; student++) {
          var row = document.createElement('TR');
@@ -376,11 +364,14 @@ if ($result ->num_rows > 0) {
          color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
          average_happiness.style.color = color
         table.appendChild(row);
-
+        table.style.background= 'white'
        }
 
        document.getElementById('table_slot').appendChild(table);
        // Class 6 - Table ends here
+
+      table_slot.style.background = 'white'
+
 
 
 
