@@ -1,22 +1,15 @@
 <?php include "../Inlogpagina/DBconn.php";
 
 
-$query = "SELECT firstName, studentId, classId, moods.happiness AS happiness FROM student INNER JOIN moods USING (studentId)";
+$query = "SELECT firstName, studentId, classId, moods.happiness AS happiness, moods.student_explanation AS explanation FROM student INNER JOIN moods USING (studentId)";
 
-//$query = "SELECT happiness, studentId FROM moods";
 
-// $query = "SELECT student.firstName, moods.happiness
-// FROM student
-// FULL OUTER JOIN moods ON student.studentId = moods.studentId
-// moods BY student.firstName";
-
-//$query = "SELECT happiness, studentId, student.firstName FROM moods INNER JOIN student ON student.studentId = moods.studentId";
 $result = $db->query($query);
 
 if ($result ->num_rows > 0) {
 
   while($row = $result->fetch_assoc()) {
-    //echo " Student wellness: " . $row["firstName"]. " " .  $row["studentId"]. " " . $row["classId"]. " " . $row["happiness"]. "<br>";
+    //echo " Student wellness: " . $row["firstName"]. " " .  $row["studentId"]. " " . $row["classId"]. " " . $row["happiness"]. " " . $row["explanation"]. "<br>";
   }
 } else {
   echo "0 results";
