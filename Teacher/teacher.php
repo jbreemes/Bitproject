@@ -38,17 +38,17 @@ if ($result ->num_rows > 0) {
 
            <div class="myBorder">
              <a href="ChangeSetting.html" id="ChangeSettingsButton">Change Settings</a>
-            
 
-       <div class="myBorder">
+
+       <!-- <div class="myBorder"> -->
 
              <form action="../Student/logout.php" method= "POST">
 
-             
+
              <button id="LogOutButton">Log Out</button>
              </form>
-             
-             
+
+
 
              <h1>Student Wellness</h1>
              <h2>My classes</h2>
@@ -66,9 +66,9 @@ if ($result ->num_rows > 0) {
 
                  <br>
 
-                 
+
                   <div id = "table_slot"></div>
-                 
+
 
                  <table id="table1" style="width:100%; display: none">
                    <tr>
@@ -102,7 +102,7 @@ if ($result ->num_rows > 0) {
                  </table>
                </div>
                <button type="button" id="ExitButton">Exit</button>
-               
+
            </div>
        </div>
        <script src="chart.js"></script>
@@ -121,7 +121,7 @@ if ($result ->num_rows > 0) {
        });
 
 
-    
+
        data = [[1, 'Mehran','Juan',4.5], [2, 'Mark','Jose',4]]
 
        var table = document.createElement('TABLE')
@@ -143,7 +143,7 @@ if ($result ->num_rows > 0) {
          var last_name = document.createElement('TD');
          last_name.innerHTML = data[student][2];
          row.appendChild(last_name);
-         
+
          var average_happiness = document.createElement('TD');
          avg_happiness = data[student][3];
          average_happiness.innerHTML = avg_happiness
@@ -152,7 +152,7 @@ if ($result ->num_rows > 0) {
          color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
          average_happiness.style.color = color
         table.appendChild(row);
-         
+
        }
 
        document.getElementById('table_slot').appendChild(table);
