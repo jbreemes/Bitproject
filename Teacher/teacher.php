@@ -37,37 +37,37 @@ if ($result ->num_rows > 0) {
        <div class="myForm">
 
            <!-- <div class="myBorder"> -->
-             <a href="ChangeSetting.html" id="ChangeSettingsButton">Change Settings</a>
+             
 
 
        <div class="myBorder">
-
-             <form action="../Student/logout.php" method= "POST">
-
-
-             <button id="LogOutButton">Log Out</button>
-             </form>
+            <a href="ChangeSetting.html" id="ChangeSettingsButton">Change Settings</a>
+            <form action="../Student/logout.php" method= "POST">
 
 
-
-             <h1>Student Wellness</h1>
-             <h2>My classes</h2>
-
-             <div id="piechart" style="width: 40vw; height: 45vh;"></div>
-             <div id="buttonSpacing">
-
-                 <button id="classBtn1">Class 1</button>
-                 <button id="classBtn2">Class 2</button>
-                 <button id="classBtn3">Class 3</button>
-                 <button id="classBtn4">Class 4</button>
-                 <button id="classBtn5">Class 5</button>
-                 <button id="classBtn6">Class 6</button>
+            <button id="LogOutButton">Log Out</button>
+            </form>
 
 
-                 <br>
+
+            <h1>Student Wellness</h1>
+            <h2>My classes</h2>
+
+            <div id="piechart" style="width: 40vw; height: 45vh;"></div>
+            <div id="buttonSpacing">
+
+                <button id="classBtn1">Class 1</button>
+                <button id="classBtn2">Class 2</button>
+                <button id="classBtn3">Class 3</button>
+                <button id="classBtn4">Class 4</button>
+                <button id="classBtn5">Class 5</button>
+                <button id="classBtn6">Class 6</button>
 
 
-                  <div id = "table_slot"></div>
+              <br>
+
+
+                <div id = "table_slot"></div>
 
 
                  <!-- <table id="table1" style="width:100%; display: none">
