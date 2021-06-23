@@ -1,9 +1,23 @@
 <?php include "../Inlogpagina/DBconn.php";
 
-// $query = mysqli_query("SELECT * FROM student", $db); ?>
+//$query = "SELECT studentId FROM student";
+$query = "SELECT happiness FROM moods";
+$result = $db->query($query);
 
-<!-- 
-?> -->
+if ($result ->num_rows > 0) {
+
+  while($row = $result->fetch_assoc()) {
+   // echo "Name: " . $row["happiness"];//. " " . $row["happiness"]. " " . $row["lastName"]. "<br>";
+  }
+} else {
+  echo "0 results";
+}
+
+
+
+ ?>
+
+
 
 
 
