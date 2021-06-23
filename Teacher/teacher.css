@@ -41,8 +41,8 @@ h2 {
 }
 
 #buttonSpacing {
-/* Padding isn't needed because it inherits it from the body */
-padding: 20px;
+/* Padding isn't needed because it inherits it from the body
+padding: 20px; */
 
      /* Doesn't work in the CSS sheet, does work inline.
     display: flex;
