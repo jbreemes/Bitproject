@@ -1,12 +1,10 @@
 <?php include "../Inlogpagina/DBconn.php";
-session_start();
               
               if(isset($_POST['messageToCoach'])){
                 $feeling = $_POST['feeling'];
                 $explanation = $_POST['messageToCoach'];
-                $id= $_SESSION['studentId'];
 
-                $query = "INSERT INTO moods(happiness, student_explanation, studentId) VALUES ('$feeling', '$explanation', $id)";
+                $query = "INSERT INTO moods(happiness, student_explanation, studentId) VALUES ('$feeling', '$explanation', 2020)";
 
                 $result = $db->query($query);
 
@@ -39,7 +37,7 @@ session_start();
 
             <div id="myInputs">
               <label for="block_labels">Very good😁</label>
-              <input type="radio" name="feeling" value="5" required>
+              <input type="radio" name="feeling" value="5">
             
               <label for="block_labels">Good😊</label>
               <input type="radio" name="feeling" value="4">
@@ -58,7 +56,7 @@ session_start();
             </div>
             <div>
               <h2>Is there something you would like to talk about?</h2><br>
-              <textarea id="textArea" name="messageToCoach" rows="8" cols="80"required></textarea><br><br>
+              <textarea id="textArea" name="messageToCoach" rows="8" cols="80"></textarea><br><br>
             </div>
             <div>
                 <a href="mailto:rqueen@gmail.com" id="MyLink">Make an appointment! </a>

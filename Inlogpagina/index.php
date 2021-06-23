@@ -65,7 +65,6 @@
 
 
   if($row['email'] == $username && $row['password'] == $passwrd){
-    $_SESSION['studentId'] = $row['studentId']; 
     header("location: ../student/student-input.php");
   } elseif($row1['email'] == $username && $row1['password'] == $passwrd){
     header("location: ../teacher/teacher.php");}
