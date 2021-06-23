@@ -20,11 +20,20 @@ h2 {
 
 .myForm {
   background-color: salmon;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 20px;
+}
+
+.myBorder {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 5%;
+  box-shadow: 10px 10px 15px black;
+  background-color: rgb(107, 174, 236);
 }
 
 #piechart {
@@ -103,14 +112,6 @@ height: 50%;
 #ExitButton:hover {
   background-color: rgb(250, 216, 185);
   color: rgb(236, 158, 90);
-}
-
-.myBorder {
-  border: 1px solid rgb(255, 255, 255);
-  padding: 20px;
-  border-radius: 5%;
-  box-shadow: 10px 10px 15px black;
-  background-color: rgb(107, 174, 236);
 }
 
 /* BUTTONS */
