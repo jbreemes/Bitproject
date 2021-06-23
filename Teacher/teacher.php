@@ -56,7 +56,7 @@ if ($result ->num_rows > 0) {
              <h2>My classes</h2>
 
              <div id="piechart" style="width: 40vw; height: 45vh;"></div>
-             <div id="buttonSpacing">
+             <div id="buttonSpacing" style="display: flex; justify-content: center">
 
                  <button id="classBtn1">Class 1</button>
                  <button id="classBtn2">Class 2</button>
@@ -65,7 +65,7 @@ if ($result ->num_rows > 0) {
                  <button id="classBtn5">Class 5</button>
                  <button id="classBtn6">Class 6</button>
 
-
+               </div>
                  <br>
 
                 <style>
@@ -75,21 +75,19 @@ if ($result ->num_rows > 0) {
                   border-collapse: collapse;
                 }
                 </style>
-                  <div id = "table_slot" style="display:hidden">
+                  <div id = "table_slot">
                     <table>
-                      <th>
-
-                        <td>ID</td>
-                        <td>First name</td>
-                        <td>Last name</td>
-                        <td>Today</td>
-                        <td>Message</td>
-
-                      </th>
+                        <th style="width: 10%">ID</th>
+                        <th>First name</th>
+                        <th>Today</th>
+                        <th>14 days</th>
+                        <th>Message</th>
                     </table>
+  <!-- This is the spot for the table -->
                   </div>
-      <!-- This is the spot for the table -->
-               </div>
+                  <br>
+
+
                <button type="button" id="ExitButton">Exit</button>
 
            </div>
@@ -163,29 +161,16 @@ if ($result ->num_rows > 0) {
 
 
 
-       data = [[1, 'Mehran','Juan',4.5], [2, 'Mark','Jose',4]]
+       data = [[1, '1234567890','Juan',4.5], [2, 'Mark','Jose',4]]
        data2 =[[3, 'Serferaaz', 'Jefe', 3],[4, 'Class', '3', 3.5]]
        theader = [['Student Id', 'Firstname', 'Today', 'This week']]
 
 
        // Class 1 - Table starts here
-       var table = document.createElement('TABLE')
-       table.id = 'table1'
-
-
+       var table = document.createElement('TABLE');
+       table.id = 'table1';
 
        for(var student = 0; student < data.length; student++) {
-
-         // ---------------------------------------
-        //   // THeader - Not working
-        // var theader = document.createElement('TH');
-        // theader.class = 'table-header';
-        //
-        // var thStId = document.createElement('TD');
-        // thStId.innerHTML = theader[firstname][0];
-        // theader.appendChild(thStId);
-         // ---------------------------------------
-
         // Start TR
          var row = document.createElement('TR');
          row.class = 'student-row';
@@ -210,14 +195,12 @@ if ($result ->num_rows > 0) {
          color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
          average_happiness.style.color = color
         table.appendChild(row);
-        table.style.background= 'white'
-
-
+          studentid.style.width = '16.5%'
        }
 
        document.getElementById('table_slot').appendChild(table);
-       // Class 1 table ends here
 
+       // Class 1 table ends here
        // Class 2 table starts here
                   var table = document.createElement('TABLE')
                   table.id = 'table2'
@@ -247,8 +230,8 @@ if ($result ->num_rows > 0) {
                     color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
                     average_happiness.style.color = color
                    table.appendChild(row);
-                   table.style.background= 'white'
-
+                   // table.style.background= 'white'
+                  studentid.style.width = '16.5%'
                   }
 
                   document.getElementById('table_slot').appendChild(table);
@@ -281,8 +264,8 @@ if ($result ->num_rows > 0) {
          color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
          average_happiness.style.color = color
         table.appendChild(row);
-        table.style.background= 'white'
-
+        // table.style.background= 'white'
+        studentid.style.width = '16.5%'
        }
 
        document.getElementById('table_slot').appendChild(table);
@@ -315,8 +298,8 @@ if ($result ->num_rows > 0) {
          color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
          average_happiness.style.color = color
         table.appendChild(row);
-        table.style.background= 'white'
-
+        // table.style.background= 'white'
+        studentid.style.width = '16.5%'
        }
 
        document.getElementById('table_slot').appendChild(table);
@@ -349,7 +332,8 @@ if ($result ->num_rows > 0) {
          color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
          average_happiness.style.color = color
         table.appendChild(row);
-        table.style.background= 'white'
+        // table.style.background= 'white'
+        studentid.style.width = '16.5%'
        }
 
        document.getElementById('table_slot').appendChild(table);
@@ -357,8 +341,8 @@ if ($result ->num_rows > 0) {
        // Class 6 - Table starts here
        var table = document.createElement('TABLE')
        table.id = 'table6'
-       table.style.color= 'red'
-       table.style.background= 'white'
+       // table.style.color= 'red'
+       // table.style.background= 'white'
 
        for(var student = 0; student < data.length; student++) {
          var row = document.createElement('TR');
@@ -384,18 +368,14 @@ if ($result ->num_rows > 0) {
          color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
          average_happiness.style.color = color
         table.appendChild(row);
-        table.style.background= 'white'
+        // table.style.background= 'white'
+
        }
        document.getElementById('table_slot').appendChild(table);
        // Class 6 - Table ends here
 
       table_slot.style.background = 'white'
-      table_slot.style.border = '1px solid black'
-      table_slot.style.padding= '5px'
-      // td.style.border = '1px solid black'
-      student.style.border = '10px solid black'
-
-
+      table_slot.style.width = '100%'
 
 
 
