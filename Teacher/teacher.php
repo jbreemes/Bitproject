@@ -70,6 +70,7 @@ if ($result ->num_rows > 0) {
 
                   border: 1px solid black;
                   border-collapse: collapse;
+                  text-align: center;
                 }
                 </style>
 
