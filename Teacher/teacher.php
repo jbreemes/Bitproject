@@ -115,7 +115,7 @@ if ($result ->num_rows > 0) {
 
 
 // DATA WEER UITZETTEN NA HET TESTEN !!!!!!
-       data = [[1, 'Mehran',5,4.5,'Im a boss'], [2, 'Mark',4.5, 4, 'Absolutely splendid']];
+       // data = [[1, 'Mehran',5,4.5,'Im a boss'], [2, 'Mark',4.5, 4, 'Absolutely splendid']];
        data2 =[[3, 'Serferaaz', 'Jefe', 3],[4, 'Class', '3', 3.5]];
 // id firstname today 14 days Message
 
