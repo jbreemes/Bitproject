@@ -14,11 +14,11 @@
     <form method="POST" action="<?php $_SERVER['PHP_SELF'] ?>"> 
         <h1>Please sign in</h1>
 
-        <label for="emailbox" class="blockLabels" required>Email:</label>
-        <input type="text" id="username" name="username">
+        <label for="emailbox" class="blockLabels" >Email:</label>
+        <input type="text" id="username" name="username" required >
 
-        <label for="password" class="blockLabels" required>Password:</label>
-        <input type="password" name="password">
+        <label for="password" class="blockLabels" >Password:</label>
+        <input type="password" name="password" required >
          <div id="loginCheckbox">
               <input type="checkbox">
               <label for="myCheckbox">Keep me signed in</label>
@@ -35,14 +35,8 @@
    include("DBconn.php");
    session_start();
 
-// //  function JSC($input){
-// //     echo "<pre>";
-// //     print_r($input);
-// //     echo "</pre>";
-// //  } 
-//  $arrayOne = [1, 2, 3, 4, 5, 6, 7, 8 , 9,10];
-//  print_r($arrayOne); JSC($arrayOne);
-// print_r($_POST);
+
+
   if(isset($_POST["username"])){ 
 
   $username = ($_POST["username"]);
@@ -70,12 +64,17 @@
   } elseif($row1['email'] == $username && $row1['password'] == $passwrd){
     header("location: ../teacher/teacher.php");}
     else { echo "Login failed"; }
-      
-    
+         
    
-
+// //  function JSC($input){
+// //     echo "<pre>";
+// //     print_r($input);
+// //     echo "</pre>";
+// //  } 
+//  $arrayOne = [1, 2, 3, 4, 5, 6, 7, 8 , 9,10];
+//  print_r($arrayOne); JSC($arrayOne);
+// print_r($_POST);
 }
-
 
    
     
@@ -87,3 +86,4 @@
 
 
 </html>
+
