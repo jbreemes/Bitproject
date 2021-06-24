@@ -118,7 +118,7 @@ height: 50%;
 
 /* BUTTONS */
 
-#classBtn1 {
+.classBtn1 {
     margin: 5px;
     padding: 20px;
 
@@ -129,7 +129,7 @@ height: 50%;
     border-radius: 5px;
 }
 
-#classBtn2 {
+.classBtn2 {
     margin: 5px;
     padding: 20px;
     background-color: crimson;
@@ -138,7 +138,7 @@ height: 50%;
     border-radius: 5px;
 }
 
-#classBtn3 {
+.classBtn3 {
     margin: 5px;
     padding: 20px;
     background-color: rgb(243, 139, 55);
@@ -147,7 +147,7 @@ height: 50%;
     border-radius: 5px;
 }
 
-#classBtn4 {
+.classBtn4 {
     margin: 5px;
     padding: 20px;
     background-color: rgb(79, 214, 113);
@@ -156,7 +156,7 @@ height: 50%;
     border-radius: 5px;
 }
 
-#classBtn5 {
+.classBtn5 {
     margin: 5px;
     padding: 20px;
     background-color: rgb(211, 70, 176);
@@ -165,7 +165,7 @@ height: 50%;
     border-radius: 5px;
 }
 
-#classBtn6 {
+.classBtn6 {
     margin: 5px;
     padding: 20px;
     background-color: rgb(238, 182, 26);
@@ -174,11 +174,11 @@ height: 50%;
     border-radius: 5px;
 }
 
-#classBtn1:hover {
+.classBtn1:hover {
     background-color: rgb(149, 134, 240);
     color: black;
 }
-#classBtn1:focus-within{
+.classBtn1:focus-within{
     outline: none;
     transform: scale(1.2);
     color: black;
@@ -186,12 +186,12 @@ height: 50%;
 
 }
 
-#classBtn2:hover {
+.classBtn2:hover {
     background-color: rgb(224, 81, 110);
     color: black;
 }
 
-#classBtn2:focus-within{
+.classBtn2:focus-within{
     outline: none;
     transform: scale(1.2);
     color: black;
@@ -199,12 +199,12 @@ height: 50%;
 
 }
 
-#classBtn3:hover {
+.classBtn3:hover {
     background-color: rgb(248, 174, 113);
     color: black;
 }
 
-#classBtn3:focus-within{
+.classBtn3:focus-within{
     outline: none;
     transform: scale(1.2);
     color: black;
@@ -212,12 +212,12 @@ height: 50%;
 
 }
 
-#classBtn4:hover {
+.classBtn4:hover {
     background-color: rgb(132, 218, 153);
     color: black;
 }
 
-#classBtn4:focus-within{
+.classBtn4:focus-within{
     outline: none;
     transform: scale(1.2);
     color: black;
@@ -225,12 +225,12 @@ height: 50%;
 
 }
 
-#classBtn5:hover {
+.classBtn5:hover {
     background-color: rgb(219, 127, 196);
     color: black;
 }
 
-#classBtn5:focus-within{
+.classBtn5:focus-within{
     outline: none;
     transform: scale(1.2);
     color: black;
@@ -238,12 +238,12 @@ height: 50%;
 
 }
 
-#classBtn6:hover {
+.classBtn6:hover {
     background-color: rgb(236, 197, 90);
     color: black;
 }
 
-#classBtn6:focus-within{
+.classBtn6:focus-within{
     outline: none;
     transform: scale(1.2);
     color: black;

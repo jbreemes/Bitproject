@@ -1,29 +1,3 @@
-<?php include "../Inlogpagina/DBconn.php";
-
-
-$query = "SELECT firstName, studentId, classId, moods.happiness AS happiness, moods.student_explanation AS explanation FROM student INNER JOIN moods USING (studentId)";
-
-
-$result = $db->query($query);
-
-if ($result ->num_rows > 0) {
-
-  while($row = $result->fetch_assoc()) {
-    echo "<div class='studentdata'>";
-    echo $row["studentId"]. "-" .  $row["firstName"]. "-" . $row["happiness"]. "-" . $row["happiness"]. "-" . $row["explanation"];
-    echo "</div>";
-  }
-} else {
-  echo "0 results";
-}
-
-
-
- ?>
-
-
-
-
 
 <!DOCTYPE html>
  <html lang="en" dir="ltr">
@@ -54,12 +28,12 @@ if ($result ->num_rows > 0) {
           <div id="piechart" style="width: 40vw; height: 45vh;"></div>
           <div id="buttonSpacing" style="display: flex; justify-content: center">
 
-            <button id="classBtn1">Class 1</button>
-            <button id="classBtn2">Class 2</button>
-            <button id="classBtn3">Class 3</button>
-            <button id="classBtn4">Class 4</button>
-            <button id="classBtn5">Class 5</button>
-            <button id="classBtn6">Class 6</button>
+            <button  id="Class 1" class="classBtn1">Class 1</button>
+            <button  id="Class 2" class="classBtn2">Class 2</button>
+            <button  id="Class 3" class="classBtn3">Class 3</button>
+            <button  id="Class 4" class="classBtn4">Class 4</button>
+            <button  id="Class 5" class="classBtn5">Class 5</button>
+            <button  id="Class 6" class="classBtn6">Class 6</button>
 
           </div>
 
@@ -97,59 +71,72 @@ if ($result ->num_rows > 0) {
 
        // Action listener for buttons
        for (var i = 1; i <= 6; i++) {
-         document.getElementById("classBtn"+i).addEventListener("click", function()
+         document.getElementById("Class " + i).addEventListener("click", function()
          {
            table.innerHTML= header;
-           insertInfo(i);
+           insertInfo(this.id);
          });
        }
-
-       let data = [];
-       let studentdata = document.getElementsByClassName('studentdata');
-       for (let i = 0 ; i < studentdata.length ; i++) {
-         data.push(studentdata[i].innerHTML.split("-"));
-
-         // TODO: Activate this line so data disappears from screen
-         studentdata[i].innerHTML = null;
-       }
-       console.log(data[1][0]);
-
-
-// DATA WEER UITZETTEN NA HET TESTEN !!!!!!
-       // data = [[1, 'Mehran',5,4.5,'Im a boss'], [2, 'Mark',4.5, 4, 'Absolutely splendid']];
-       data2 =[[3, 'Serferaaz', 'Jefe', 3],[4, 'Class', '3', 3.5]];
-// id firstname today 14 days Message
-
-
 
        // Class 1 - Table starts here
        var table = document.getElementById("table_slot");
        var header = table.innerHTML;
        table.innerHTML='';
-       // table.id = 'table1';
+       //console.log(header);
 
-       console.log(header);
       function insertInfo (classId){
+        
+        
+<?php include "../Inlogpagina/DBconn.php" ;
+        
 
-       for(var student = 0; student < data.length; student++) {
+$query = "SELECT firstName, studentId, classId, moods.happiness 
+AS happiness, moods.student_explanation AS explanation 
+FROM student INNER JOIN moods USING (studentId)";
+
+$result = $db->query($query);
+//print_r($result);
+$a = [];
+while($row = $result->fetch_assoc()){
+  $a[] = $row; 
+}
+//$a = [1,2,3,[1,2]];
+?>
+
+let result = <?php echo json_encode($a); ?>;
+console.log(result[0], result[1]);
+
+
+// Loop door de hele result heen en vergelijk de classId van de functie met de classId uit een row van de result.
+// zoek uit hoe je result[0] alleen de naam krijgt
+// haal alle $ weg, sorry!
+  {
+ 
+
+        for (let i = 0; i < result.length; i++) {
+          const element = result[i];
+          console.log(result[i]['classId']);
+          console.log(classId);
+          if(result[i]['classId']== classId){
+        
 
          // Start TR
          var row = document.createElement('TR');
          row.class = 'student-row';
 
          var studentid = document.createElement('TD');
-         studentid.innerHTML = data[student][0];
+         studentid.innerHTML = result[i]['studentId'];
          row.appendChild(studentid);
 
          var first_name = document.createElement('TD');
-         first_name.innerHTML = data[student][1];
+         first_name.innerHTML = result[i]['firstName'];
          row.appendChild(first_name);
 
          // var last_name = document.createElement('TD');
          // last_name.innerHTML = data[student][2];
          // row.appendChild(last_name);
          var average_happiness = document.createElement('TD');
-         avg_happiness = data[student][2];
+         avg_happiness =result[i]['happiness'];
          average_happiness.innerHTML = avg_happiness
          row.appendChild(average_happiness);
          avg_happiness--;
@@ -158,7 +145,7 @@ if ($result ->num_rows > 0) {
 
 
          var average_happiness = document.createElement('TD');
-         avg_happiness = data[student][3];
+         avg_happiness = result[i]['happiness'];
          average_happiness.innerHTML = avg_happiness
          row.appendChild(average_happiness);
          avg_happiness--;
@@ -170,12 +157,14 @@ if ($result ->num_rows > 0) {
                // // hier bezig
 
                  var explanation = document.createElement('TD');
-                 explanation.innerHTML= data[student][4];
+                 explanation.innerHTML= result[i]['explanation'];
                  row.appendChild(explanation);
 
                  // hier niet meer
 
-       }
+          }
+      }
+  } 
        // document.getElementById('table_slot').appendChild(table);
 }
        // Class 1 table ends here
