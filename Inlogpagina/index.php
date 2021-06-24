@@ -63,7 +63,7 @@
     header("location: ../student/student-input.php");
   } elseif($row1['email'] == $username && $row1['password'] == $passwrd){
     header("location: ../teacher/teacher.php");}
-    else { echo "Login failed"; }
+    else { echo "<h1>Login failed</h1>"; }
          
    
 // //  function JSC($input){
