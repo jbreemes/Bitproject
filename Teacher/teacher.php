@@ -10,7 +10,7 @@ if ($result ->num_rows > 0) {
 
   while($row = $result->fetch_assoc()) {
     echo "<div class='studentdata'>";
-    echo $row["studentId"]. "-" .  $row["firstName"]. "-" . $row["classId"]. "-" . $row["happiness"]. "-" . $row["explanation"];
+    echo $row["studentId"]. "-" .  $row["firstName"]. "-" . $row["happiness"]. "-" . $row["happiness"]. "-" . $row["explanation"];
     echo "</div>";
   }
 } else {
