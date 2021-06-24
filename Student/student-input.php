@@ -1,10 +1,12 @@
 <?php include "../Inlogpagina/DBconn.php";
+session_start();
               
               if(isset($_POST['messageToCoach'])){
                 $feeling = $_POST['feeling'];
                 $explanation = $_POST['messageToCoach'];
+                $id= $_SESSION['studentId'];
 
-                $query = "INSERT INTO moods(happiness, student_explanation, studentId) VALUES ('$feeling', '$explanation', 2020)";
+                $query = "INSERT INTO moods(happiness, student_explanation, studentId) VALUES ('$feeling', '$explanation', $id)";
 
                 $result = $db->query($query);
 
