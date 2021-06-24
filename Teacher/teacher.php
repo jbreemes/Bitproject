@@ -85,9 +85,9 @@ if ($result ->num_rows > 0) {
                   </div>
                   <br>
 
-
-               <button type="button" id="ExitButton">Exit</button>
-
+                <form action="../Student/logout.php" method="POST">
+               <button type="submit" id="ExitButton">Logout</button>
+               </form>
            </div>
        </div>
        <script src="chart.js"></script>
@@ -109,7 +109,7 @@ if ($result ->num_rows > 0) {
          data.push(studentdata[i].innerHTML.split("-"));
 
          // TODO: Activate this line so data disappears from screen
-         // studentdata[i].innerHTML = null;
+         studentdata[i].innerHTML = null;
        }
        console.log(data[1][0]);
 
