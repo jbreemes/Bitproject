@@ -70,6 +70,7 @@ if ($result ->num_rows > 0) {
 
                   border: 1px solid black;
                   border-collapse: collapse;
+                  text-align: center;
                 }
                 </style>
 
@@ -109,7 +110,7 @@ if ($result ->num_rows > 0) {
          data.push(studentdata[i].innerHTML.split("-"));
 
          // TODO: Activate this line so data disappears from screen
-         // studentdata[i].innerHTML = null;
+         studentdata[i].innerHTML = null;
        }
        console.log(data[1][0]);
 
