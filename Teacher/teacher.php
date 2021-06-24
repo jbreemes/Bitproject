@@ -9,7 +9,9 @@ $result = $db->query($query);
 if ($result ->num_rows > 0) {
 
   while($row = $result->fetch_assoc()) {
-    //echo " Student wellness: " . $row["firstName"]. " " .  $row["studentId"]. " " . $row["classId"]. " " . $row["happiness"]. " " . $row["explanation"]. "<br>";
+    echo "<div class='studentdata'>";
+    echo $row["studentId"]. "-" .  $row["firstName"]. "-" . $row["classId"]. "-" . $row["happiness"]. "-" . $row["explanation"];
+    echo "</div>";
   }
 } else {
   echo "0 results";
@@ -101,10 +103,19 @@ if ($result ->num_rows > 0) {
          });
        }
 
+       let data = [];
+       let studentdata = document.getElementsByClassName('studentdata');
+       for (let i = 0 ; i < studentdata.length ; i++) {
+         data.push(studentdata[i].innerHTML.split("-"));
+
+         // TODO: Activate this line so data disappears from screen
+         // studentdata[i].innerHTML = null;
+       }
+       console.log(data[1][0]);
 
 
 
-       data = [[1, 'Mehran','Juan',4.5], [2, 'Mark','Jose',4]];
+      //  data = [[1, 'Mehran','Juan',4.5], [2, 'Mark','Jose',4]];
        data2 =[[3, 'Serferaaz', 'Jefe', 3],[4, 'Class', '3', 3.5]];
 
 
@@ -118,7 +129,7 @@ if ($result ->num_rows > 0) {
        console.log(header);
       function insertInfo (classId){
 
-       for(var student = 0; student <= data.length; student++) {
+       for(var student = 0; student < data.length; student++) {
 
          // Start TR
          var row = document.createElement('TR');
