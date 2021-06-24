@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: 'Lobster', Arial, Helvetica, sans-serif;
-  height: 100%;
+  height: auto;
   background-color: salmon;
 }
 
@@ -20,7 +20,7 @@ h2 {
 
 .myForm {
   background-color: salmon;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,6 +34,8 @@ h2 {
   border-radius: 5%;
   box-shadow: 10px 10px 15px black;
   background-color: rgb(107, 174, 236);
+  height: auto;
+  overflow: inherit;
 }
 
 #piechart {

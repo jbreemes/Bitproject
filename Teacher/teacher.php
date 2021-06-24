@@ -37,55 +37,56 @@ if ($result ->num_rows > 0) {
 
 
    <body>
+    <div class="myForm">
+      <div class="myBorder">
 
-       <div class="myForm">
-           <div class="myBorder">
+        <a href="ChangeSetting.html" id="ChangeSettingsButton">Change Settings</a>
 
-            <a href="ChangeSetting.html" id="ChangeSettingsButton">Change Settings</a>
-
-             <form action="../Student/logout.php" method= "POST">
-             <button id="LogOutButton">Log Out</button>
-             </form>
-
+          <form action="../Student/logout.php" method= "POST">
+            <button id="LogOutButton">Log Out</button>
+          </form>
 
 
-             <h1>Student Wellness</h1>
-             <h2>My classes</h2>
 
-             <div id="piechart" style="width: 40vw; height: 45vh;"></div>
-             <div id="buttonSpacing" style="display: flex; justify-content: center">
+          <h1>Student Wellness</h1>
+          <h2>My classes</h2><br>
 
-                 <button id="classBtn1">Class 1</button>
-                 <button id="classBtn2">Class 2</button>
-                 <button id="classBtn3">Class 3</button>
-                 <button id="classBtn4">Class 4</button>
-                 <button id="classBtn5">Class 5</button>
-                 <button id="classBtn6">Class 6</button>
+          <div id="piechart" style="width: 40vw; height: 45vh;"></div>
+          <div id="buttonSpacing" style="display: flex; justify-content: center">
 
-               </div>
+            <button id="classBtn1">Class 1</button>
+            <button id="classBtn2">Class 2</button>
+            <button id="classBtn3">Class 3</button>
+            <button id="classBtn4">Class 4</button>
+            <button id="classBtn5">Class 5</button>
+            <button id="classBtn6">Class 6</button>
+
+          </div>
 
 
-                <style>
-                  table, th, td {
+          <style>
+            table, th, td {
 
-                  border: 1px solid black;
-                  border-collapse: collapse;
-                  text-align: center;
-                }
-                </style>
+              border: 1px solid black;
+              border-collapse: collapse;
+              text-align: center;
+            }
+          </style>
 
-                  <div>
-                    <table id = "table_slot">
-                        <th>ID</th>
-                        <th>First name</th>
-                        <th>Today</th>
-                        <th>14 days</th>
-                        <th>Message</th>
-                    </table>
-  <!-- This is the spot for the table -->
-                  </div>
-                  <br>
+            <div>
+              <table id = "table_slot">
+                <th>ID</th>
+                <th>First name</th>
+                <th>Today</th>
+                <th>14 days</th>
+                <th>Message</th>
+              </table>
+ 
+            </div> <br>
+             
 
+
+<<<<<<< Updated upstream
                 <form action="../Student/logout.php" method="POST">
                <button type="submit" id="ExitButton">Exit</button>
                </form>
@@ -93,6 +94,14 @@ if ($result ->num_rows > 0) {
        </div>
        <script src="chart.js"></script>
        <script>
+=======
+            <button type="button" id="ExitButton">Exit</button>
+            <p style="clear: both;"></p>
+      </div>
+    </div>
+    <script src="chart.js"></script>
+      <script>
+>>>>>>> Stashed changes
 
 
        // Action listener for buttons
