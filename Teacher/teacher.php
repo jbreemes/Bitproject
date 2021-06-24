@@ -87,7 +87,7 @@ if ($result ->num_rows > 0) {
                   <br>
 
                 <form action="../Student/logout.php" method="POST">
-               <button type="submit" id="ExitButton">Logout</button>
+               <button type="submit" id="ExitButton">Exit</button>
                </form>
            </div>
        </div>
