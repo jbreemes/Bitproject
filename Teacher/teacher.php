@@ -114,9 +114,10 @@ if ($result ->num_rows > 0) {
        console.log(data[1][0]);
 
 
-
-      //  data = [[1, 'Mehran','Juan',4.5], [2, 'Mark','Jose',4]];
+// DATA WEER UITZETTEN NA HET TESTEN !!!!!!
+       data = [[1, 'Mehran',5,4.5,'Im a boss'], [2, 'Mark',4.5, 4, 'Absolutely splendid']];
        data2 =[[3, 'Serferaaz', 'Jefe', 3],[4, 'Class', '3', 3.5]];
+// id firstname today 14 days Message
 
 
 
@@ -143,9 +144,16 @@ if ($result ->num_rows > 0) {
          first_name.innerHTML = data[student][1];
          row.appendChild(first_name);
 
-         var last_name = document.createElement('TD');
-         last_name.innerHTML = data[student][2];
-         row.appendChild(last_name);
+         // var last_name = document.createElement('TD');
+         // last_name.innerHTML = data[student][2];
+         // row.appendChild(last_name);
+         var average_happiness = document.createElement('TD');
+         avg_happiness = data[student][2];
+         average_happiness.innerHTML = avg_happiness
+         row.appendChild(average_happiness);
+         avg_happiness--;
+         color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
+         average_happiness.style.color = color
 
 
          var average_happiness = document.createElement('TD');
@@ -156,6 +164,15 @@ if ($result ->num_rows > 0) {
          color = "rgb("+255*((4-avg_happiness)/4) +", " + 255*(avg_happiness/4) + ", 0)"
          average_happiness.style.color = color
         table.appendChild(row);
+
+
+               // // hier bezig
+
+                 var explanation = document.createElement('TD');
+                 explanation.innerHTML= data[student][4];
+                 row.appendChild(explanation);
+
+                 // hier niet meer
 
        }
        // document.getElementById('table_slot').appendChild(table);
