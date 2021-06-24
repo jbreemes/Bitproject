@@ -86,7 +86,6 @@ if ($result ->num_rows > 0) {
              
 
 
-<<<<<<< Updated upstream
                 <form action="../Student/logout.php" method="POST">
                <button type="submit" id="ExitButton">Exit</button>
                </form>
@@ -94,14 +93,6 @@ if ($result ->num_rows > 0) {
        </div>
        <script src="chart.js"></script>
        <script>
-=======
-            <button type="button" id="ExitButton">Exit</button>
-            <p style="clear: both;"></p>
-      </div>
-    </div>
-    <script src="chart.js"></script>
-      <script>
->>>>>>> Stashed changes
 
 
        // Action listener for buttons
