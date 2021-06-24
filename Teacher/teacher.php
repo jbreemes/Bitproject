@@ -95,7 +95,7 @@ if ($result ->num_rows > 0) {
        // Action listener for button 1
        document.getElementById("classBtn1").addEventListener("click", function()
        {
-      document.getElementById("table_slot").style.display = "block";
+       document.getElementById("table_slot").style.display = "block";
        document.getElementById("table1").style.display = "block";
        document.getElementById("table2").style.display = "none";
        document.getElementById("table3").style.display = "none";
@@ -107,6 +107,7 @@ if ($result ->num_rows > 0) {
        // Action listener for button 2
        document.getElementById("classBtn2").addEventListener("click", function()
        {
+         document.getElementById("table_slot").style.display = "block";
          document.getElementById("table1").style.display = "none";
          document.getElementById("table2").style.display = "block";
          document.getElementById("table3").style.display = "none";
@@ -117,6 +118,7 @@ if ($result ->num_rows > 0) {
        // Action listener for button 3
        document.getElementById("classBtn3").addEventListener("click", function()
        {
+         document.getElementById("table_slot").style.display = "block";
          document.getElementById("table1").style.display = "none";
          document.getElementById("table2").style.display = "none";
          document.getElementById("table3").style.display = "block";
@@ -127,6 +129,7 @@ if ($result ->num_rows > 0) {
        // Action listener for button 4
        document.getElementById("classBtn4").addEventListener("click", function()
        {
+         document.getElementById("table_slot").style.display = "block";
          document.getElementById("table1").style.display = "none";
          document.getElementById("table2").style.display = "none";
          document.getElementById("table3").style.display = "none";
@@ -137,6 +140,7 @@ if ($result ->num_rows > 0) {
        // Action listener for button 5
        document.getElementById("classBtn5").addEventListener("click", function()
        {
+         document.getElementById("table_slot").style.display = "block";
          document.getElementById("table1").style.display = "none";
          document.getElementById("table2").style.display = "none";
          document.getElementById("table3").style.display = "none";
@@ -147,6 +151,7 @@ if ($result ->num_rows > 0) {
        // Action listener for button 6
        document.getElementById("classBtn6").addEventListener("click", function()
        {
+         document.getElementById("table_slot").style.display = "block";
          document.getElementById("table1").style.display = "none";
          document.getElementById("table2").style.display = "none";
          document.getElementById("table3").style.display = "none";
@@ -373,8 +378,6 @@ if ($result ->num_rows > 0) {
 
       table_slot.style.background = 'white'
       table_slot.style.width = '100%'
-
-
 
        </script>
    </body>
